@@ -1,0 +1,1047 @@
+/*
+ ::Table Of Content
+ 1). Hero-section Styling
+ 2). Timer Section Styling
+ 3). Register-box Section Styling
+ 4). Welcome Section Styling
+ 5). Event-detail-section Styling
+ 6). Event-table-section Styling
+ 7). Reward-section Styling
+ 8). Speaker Section Styling
+ 9). Sponsor Section Styling
+ 10). Past-Event Section Styling
+ 11). Map Section Styling
+ 12). Bouncer Top Section Styling
+ -----------------------------------------------*/
+
+
+/*
+ 1). Hero-section Styling
+ ----------------------------------------------*/
+.wrapper {
+	overflow:hidden;
+}
+#intro{
+	position: relative;
+	padding-top: 13%;
+}
+.intro-wrapper{
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+}
+
+.bottom-cover{
+	position: absolute;
+	left: -11px;
+	bottom:-99px;
+	width: 105%;
+	height: 100px;
+	z-index: 20;
+    background-color: #fff;
+    transform: rotate(-4deg);
+    -webkit-transform: rotate(-4deg);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+}
+
+
+/*
+ 2). Timer Section Styling
+ ----------------------------------------------*/
+
+.timer-section{
+	max-width: 970px;
+	margin: 0 auto;
+	border: solid 2px #82b541;
+	border-radius: 18px;
+	padding: 8px 77px 56px;
+	margin-bottom:16%;	
+	position: relative;
+	z-index: 100;
+}
+.countdown-section {
+	width: 18%;
+	height: 130px;
+	float: left;
+	margin-right: 8%;
+	position: relative;
+	text-align: center;
+}
+.countdown-section:before, .countdown-section:after{
+	position: absolute;
+	content: "";
+	right: -38px;
+	top: 42px;
+	width: 6px;
+	height: 8px;
+	background-color: #ffffff;
+}
+.countdown-section:after{
+	top: auto;
+	bottom: 18px;
+}
+.countdown-section:last-child{
+	margin-right: 0;
+}
+.countdown-section:last-child:before, .countdown-section:last-child:after{
+	background-color: transparent;
+}
+.countdown-amount {
+	font-size: 13em;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 100;
+	color: rgb( 255, 255, 255 );
+	display: block;
+	text-shadow: 0.5px 0.134px 1px rgba( 40, 40, 40,1 );
+	margin-bottom: 10px;
+	display: block;
+}
+
+.countdown-period{
+	font-size: 2.5em;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+	color: rgb( 255, 255, 255 );
+	text-transform: uppercase;
+	display: block;
+}
+
+/*
+ 3). Register-box Section Styling
+ ----------------------------------------------*/
+
+.register-box{
+	background-color: rgb( 255, 255, 255 );
+    box-shadow: 0.5px 0.866px 2px 0px rgb( 35, 31, 32 );
+	width: 41.5%;
+	float: right;
+	margin-top: -228px;
+	padding: 32px 30px 24px;
+	position: relative;
+	z-index: 30;
+}
+.register-box h3  {
+	color: #252525;
+	font-size: 3em;
+	font-weight: 700;
+	display: block;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.row{
+	margin-bottom: 19px;
+}
+.row.none{
+	margin-bottom: 0;
+}
+
+.formcontrol::-webkit-input-placeholder { color:#bebebe; }
+.formcontrolt::-moz-placeholder { color:#bebebe; } 
+.formcontrol:-ms-input-placeholder { color:#bebebe; } 
+
+.formcontrol{
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb( 190, 190, 190 );
+  border-radius: 5px;
+  background-color: rgb( 255, 255, 255 );
+  color: #6c6c6c;
+  font-size: 1.9em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  height: 55px;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.formcontrol:focus,.back-btn:focus{
+  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  border-color: rgb( 144, 210, 61 );
+}
+.formbtn,.back-btn{
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: rgb( 144, 210, 61 );
+  border: solid 1px rgb( 144, 210, 61 );
+  width: 100%;
+  color: #ffffff;
+  font-size: 2.2em;
+  font-weight: 700;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+.formbtn:hover,.back-btn:hover{
+	transition: all 0.5s ease-in;
+	background-color: rgb( 255, 255, 255);
+     color: rgb( 144, 210, 61 );
+}
+.back-btn:hover{
+	 border: solid 1px rgb( 255, 255, 255 );
+	 border-radius:15px;
+	  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+}
+
+.back-btn{
+	position:absolute;
+	top:20px;
+	right:20px;
+	width:auto;
+	padding-left:30px;
+	padding-right:30px;
+	z-index:999;
+	 border-radius:15px;
+	  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  display:none;
+
+}
+.note span{
+	display: block;
+	text-align: center;
+	color: #6c6c6c;
+	font-size: 1.5em;
+	font-weight: 300;
+	line-height: 1.1;
+}
+#menu-contact{
+	min-height:400px !important;
+}
+/*
+ 4). Welcome Section Styling
+ ----------------------------------------------*/
+
+.welcome-inner{
+	margin-bottom: 126px;
+	position: relative;
+	z-index: 200;
+}
+.welcome-text{
+	float: left;
+	width: 51%;
+	margin-top: 50px;
+	margin-left: 2px;
+}
+.welcome-text h2{
+	color: #242424;	
+	padding-bottom: 20px;
+}
+.welcome-text p{
+	margin-bottom: 18px;
+}
+.welcome-text p a{
+	color: #242424;
+	font-weight: 500;
+}
+
+
+section#menu-event-detail::before {
+  content: '';
+  background-color: rgb(255, 255, 255);
+  width: 105%;
+  height:350px;
+  position: absolute;
+  top:0;
+  transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  left: -4px;
+}
+
+
+/*
+ 5). Event-detail-section Styling
+ ----------------------------------------------*/
+
+/*.event-detail-section{
+	margin-bottom: 100px;
+}*/
+/*.event-section{
+	float: left;
+	width: 30%;
+	margin-right: 5%;
+}*/
+/*.event-section:last-child{
+	margin-right: 0;
+}*/
+/*.img-wrap{
+	margin-bottom: 40px;
+	text-align: center;
+	height: 211px;
+	line-height: 211px;
+}*/
+.img-wrap img{
+	vertical-align: bottom;
+}
+svg{
+	width:100%;
+	height:100%;
+}
+svg.moderator{
+	width:80%;
+}
+svg.contact{
+	width:53%;
+}
+
+/*.event-section h3{
+	text-align: center;
+	color: #242424;
+	font-size: 3.5em;
+	font-weight: 700;
+	padding-bottom: 20px;
+}
+.event-section p{
+	margin: 0 auto;
+	text-align: center;
+	width: 97%;
+}*/
+
+
+/*
+ 6). Event-table-section Styling
+ ----------------------------------------------*/
+
+.event-table-section{
+	border-radius: 8px;
+	/*margin-bottom: 160px;*/
+}
+.table-row{
+	width: 100%;
+	background-color: #373737;
+	padding: 21px 0;
+}
+.table-row.bottom{
+	border-radius: 0 0  6px 6px;
+}
+.head{
+	background-color: #a3cc40;
+	border-radius: 6px 6px 0 0;
+	padding: 22px 0;
+}
+.alt{
+	background-color: #4b4d4f;
+}
+.table-row ul{
+	overflow: hidden;
+}
+.table-row li{
+	float: left;
+	list-style: none;
+	color: #ffffff;
+	font-size: 2.2em;
+	font-weight: 400;
+	line-height: 1.5;
+}
+.head li{
+	font-size: 3em;
+	font-weight: 700;
+	line-height: 1;
+}
+.table-row li:first-child{
+	margin: 0 30px;
+	width: 170px;
+	text-align: center;
+}
+.table-row li:nth-child(2){
+	margin-left: 67px;
+}
+
+.table-row li.more{
+	float: right;
+	width: 70px;
+	margin: 0 30px;	
+	text-align: center;
+}
+
+.table-row li.more i{
+	cursor: pointer;
+	width: 33px;
+	height: 33px;
+	background: url(../images/plus.png) center center no-repeat;
+	display: inline-block;
+	position: relative;
+	top: 0;
+}
+.table-row li.more i.minus{
+	background-image: url(../images/minus.png);
+}
+.more-text{
+	display: none;
+	width: 100%;
+	padding: 20px 50px;
+	color: #cccccc;
+	font-size: 1.5em;
+	text-align: justify;
+	line-height: 1.4;
+}
+.msg{
+	font-weight: 300;
+	font-size: 1.4em;
+	color: #242424;
+	width: 81%;
+	margin: 40px auto;
+	line-height: 1.2;
+	display: block;
+	text-align: center;
+}
+
+/*
+ 7). Reward-section Styling
+ ----------------------------------------------*/
+
+/*.reward-section, .sponsor{
+	position: relative;
+	height: 700px;
+	background: #ffffff url(../images/reward-bg.jpg) left top no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+
+.elite-badge{
+	background: url(../images/elite-badge.png) left top no-repeat;
+	width: 354px;
+	height: 357px;
+	display: inline-block;
+	position: relative;
+    top: -75px;
+    left: -4px;	
+    z-index: 99;
+}
+.elite-content{
+	float: right;
+	width: 65%;
+	padding-top: 171px;
+}
+.elite-content h2{
+	text-align: right;
+	color: #ffffff;
+}
+.elite-content p{
+	color: #ffffff;
+	text-align: right;
+	/*margin-bottom: 20px;*/
+}
+/*.elite-content p span{
+	display: block;
+}
+.elite-content .custom-btn{
+	float: right;
+	margin-top: 16px;
+}*/
+
+
+/*
+ 8). Speaker Section Styling
+ ----------------------------------------------*/
+
+.speaker{
+	padding-bottom: 30px;	
+	position: relative;
+	padding-top: 132px;
+}
+.speaker-inner{
+	padding: 0 30px;
+}
+.speaker h2{
+	padding-bottom: 28px;
+}
+.speaker p{
+	width: 60%;
+	margin-bottom: 62px;
+}
+.speaker-col{
+	width: 30.8%;
+	float: left;
+	margin-right: 3.8%;
+	position: relative;
+	z-index: 1;
+	perspective: 1000;
+}
+.speaker-col:last-child{
+	margin-right: 0;
+}
+.speaker-row{
+	margin-bottom: 42px;
+}
+.speaker-col{
+	text-align: center;	
+}
+
+
+.view{
+    overflow: hidden;
+}
+.view img {
+    display: block;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.flippedcontent{
+	position: absolute;
+	left:0;
+	top:0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background: url(../images/speaker-block-hover-small.png) left top repeat;
+	border-radius: 16px;
+	padding: 30px;
+	text-align: left;
+	cursor:pointer;
+}
+.flippedcontent h2{
+	font-size: 4.5em;
+	color: #ffffff;
+	font-weight: 700;
+	display: block;	
+	position: relative;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+}
+.flippedcontent h2:after{
+	position: absolute;
+	left:0;
+	bottom: 0;
+	content: "";
+	width: 80px;
+	height: 5px;
+	background-color: #ffffff;
+}
+.flippedcontent p{
+	display: block;
+	font-size: 1.8em;
+	color: #ffffff;
+	line-height: 1.3;
+	margin-bottom: 50px;
+	font-weight: 500;
+	width: 100%;
+}
+.flippedcontent p a{
+	color: #ffffff;
+}
+.flippedcontent p a:hover{
+	text-decoration:underline;
+}
+.flippedcontent li{
+	display: inline-block;
+	padding: 0 3px;
+}
+.flippedcontent li a{
+	display: block;
+	text-indent: -9999px;
+	width: 31px;
+	height: 31px;
+	background-image: url(../images/sprite.png);
+	background-repeat: no-repeat;	
+	-webkit-transition: box-shadow 0.2s;
+	-moz-transition: box-shadow 0.2s;
+	transition: box-shadow 0.2s;
+	border-radius: 50%;
+}
+.flippedcontent li a:hover {
+	color: #eea303;
+	box-shadow: 0 0 0 3px #fff;
+	
+}
+.flippedcontent li a.facebook{
+	background-position: -351px -51px;
+}
+.flippedcontent li a.twitter{
+	background-position: -389px -51px;
+}
+.flippedcontent li a.behance{
+	background-position: -429px -51px;
+}
+.flippedcontent li a.dribbble{
+	background-position: -468px -51px;
+}
+.view-sixth img { 
+	-webkit-transition: all 0.4s ease-in-out 0.5s;
+   -moz-transition: all 0.4s ease-in-out 0.5s;
+   -o-transition: all 0.4s ease-in-out 0.5s;
+   -ms-transition: all 0.4s ease-in-out 0.5s;
+   transition: all 0.4s ease-in-out 0.5s;
+}
+.view-sixth .mask{ 
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transition: all 0.3s ease-in 0.4s;
+   -moz-transition: all 0.3s ease-in 0.4s;
+   -o-transition: all 0.3s ease-in 0.4s;
+   -ms-transition: all 0.3s ease-in 0.4s;
+   transition: all 0.3s ease-in 0.4s;
+}
+.view-sixth h2 {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   background: transparent;
+   -webkit-transform: scale(10);
+   -moz-transform: scale(10);
+   -o-transform: scale(10);
+   -ms-transform: scale(10);
+   transform: scale(10);
+   -webkit-transition: all 0.3s ease-in-out 0.1s;
+   -moz-transition: all 0.3s ease-in-out 0.1s;
+   -o-transition: all 0.3s ease-in-out 0.1s;
+   -ms-transition: all 0.3s ease-in-out 0.1s;
+   transition: all 0.3s ease-in-out 0.1s;
+}
+.view-sixth p {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transform: scale(10);
+   -moz-transform: scale(10);
+   -o-transform: scale(10);
+   -ms-transform: scale(10);
+   transform: scale(10);
+   -webkit-transition: all 0.3s ease-in-out 0.2s;
+   -moz-transition: all 0.3s ease-in-out 0.2s;
+   -o-transition: all 0.3s ease-in-out 0.2s;
+   -ms-transition: all 0.3s ease-in-out 0.2s;
+   transition: all 0.3s ease-in-out 0.2s;
+}
+.view-sixth li a { 
+	 -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transform: translateY(100px);
+   -moz-transform: translateY(100px);
+   -o-transform: translateY(100px);
+   -ms-transform: translateY(100px);
+   transform: translateY(100px);
+   -webkit-transition: all 0.3s ease-in-out 0.1s;
+   -moz-transition: all 0.3s ease-in-out 0.1s;
+   -o-transition: all 0.3s ease-in-out 0.1s;
+   -ms-transition: all 0.3s ease-in-out 0.1s;
+   transition: all 0.3s ease-in-out 0.1s;
+}
+
+.view-sixth:hover .mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transition-delay: 0.3s;
+   -moz-transition-delay: 0.3s;
+   -o-transition-delay: 0.3s;
+   -ms-transition-delay: 0.3s;
+   transition-delay: 0.3s;
+}
+.view-sixth:hover img {
+   -webkit-transition-delay: 0s;
+   -moz-transition-delay: 0s;
+   -o-transition-delay: 0s;
+   -ms-transition-delay: 0s;
+   transition-delay: 0s;
+}
+.view-sixth:hover h2 {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transform: scale(1);
+   -moz-transform: scale(1);
+   -o-transform: scale(1);
+   -ms-transform: scale(1);
+   transform: scale(1);
+   -webkit-transition-delay: 0.1s;
+   -moz-transition-delay: 0.1s;
+   -o-transition-delay: 0.1s;
+   -ms-transition-delay: 0.1s;
+   transition-delay: 0.1s;
+}
+.view-sixth:hover p {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transform: scale(1);
+   -moz-transform: scale(1);
+   -o-transform: scale(1);
+   -ms-transform: scale(1);
+   transform: scale(1);
+   -webkit-transition-delay: 0.2s;
+   -moz-transition-delay: 0.2s;
+   -o-transition-delay: 0.2s;
+   -ms-transition-delay: 0.2s;
+   transition-delay: 0.2s;
+}
+.view-sixth:hover li a {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transform: translateY(0px);
+   -moz-transform: translateY(0px);
+   -o-transform: translateY(0px);
+   -ms-transform: translateY(0px);
+   transform: translateY(0px);
+   -webkit-transition-delay: 0.3s;
+   -moz-transition-delay: 0.3s;
+   -o-transition-delay: 0.3s;
+   -ms-transition-delay: 0.3s;
+   transition-delay: 0.3s;
+}
+			
+
+
+
+
+/*
+ 9). Sponsor Section Styling
+ ----------------------------------------------*/
+
+/*.sponsor{
+	background-image: url(../images/sponsor-bg.jpg);
+	padding-bottom: 0;
+	height: 700px;
+	position: relative;
+}*/
+
+
+
+.sponsor-inner{
+	text-align: center;
+	padding-top: 164px;
+}
+.sponsor h2{
+	color: #ffffff;
+}
+.sponsor p{
+	color: #ffffff;
+	margin: 0 auto;
+	width: 95%;
+	margin-bottom: 20px;
+}
+.sponsor ul{
+	display: table;
+	width: 100%;
+	margin: 50px 0;
+}
+.sponsor li{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/*
+ 10). Past-Event Section Styling
+ ----------------------------------------------*/
+
+.past-event{
+	position: relative;
+	padding-bottom: 90px;
+	padding-top: 110px;
+}
+.past-event-top{
+	padding: 0 100px;
+	width: 68%;
+	margin-bottom: 100px;
+}
+.event-wrap{
+	margin-bottom: 98px;
+}
+.past-event-col{
+	float: left;
+	height: 416px;
+}
+.alt-row{
+	height: 367px;
+}
+.primary{
+	width: 51.5%;
+}
+.secondary{
+	width: 48.5%;
+}
+.past-event-col img{
+	width: 100%;
+	height: 100%;
+}
+.past-event-row .info{
+	background-color: #3d6ed2;
+}
+.past-event-row .success{
+	background-color: #90d23d;
+}
+.past-event-row .warning{
+	background-color: #ff9d00;
+}
+.past-event-row .danger{
+	background-color: #e0652a;
+}
+.more-event-toggle-section{
+	display: none;
+}
+
+/*
+ 11). Map Section Styling
+ ----------------------------------------------*/
+.map{
+	height: 660px;
+	position: relative;
+	z-index: 10;
+	
+}
+#map-canvas{
+	height: 660px;
+}
+.map-overlay{
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.7);
+	
+}
+.contact-form{
+	margin: 73px 0;
+	background: #ffffff;
+	float:left;
+	width: 100%;
+	padding: 60px 70px 35px;
+}
+.contact-info{
+	float: left;
+	width: 270px;
+	margin: 38px 30px 0;
+	text-align: center;
+}
+.contact-us{
+	float: right;
+	width: 48%;
+}
+
+.address{
+	margin: 40px 0 25px;
+}
+.address span{
+	display: block;
+	color: #454444;
+	font-size: 1.8em;
+	font-weight: 300;
+	padding-bottom: 4px;
+}
+.contact-info .formbtn{
+	border-radius: 14px;
+	font-weight: 400;
+	width: 200px;
+	margin-top: 0;
+}
+.contact-us textarea{
+	height: 260px;
+}
+.contact-us .formbtn{
+	margin-top: 6px;
+	background-color: #373737;
+	border-color: #373737;
+	font-weight: 400;
+}
+.contact-us .formbtn:hover{
+	background-color: transparent;
+	color: #373737;
+}
+
+
+/*
+ 12). Bouncer Top Section Styling
+ ----------------------------------------------*/
+.bouncers{
+	position: relative;
+	height: 170px;
+	top:-15px;
+	
+}
+.bouncer{
+	float: left;	
+	margin-left: -35px;
+	position: relative;
+}
+svg.bounce-image{
+	width: 100%;
+}
+.bouncer1{
+	width: 14%;
+	z-index: 20;
+	margin-left: 0;
+	top: 50px;
+	transform: rotate(-17deg);
+	-webkit-transform: rotate(-17deg);
+	-moz-transform: rotate(-17deg);
+	-ms-transform: rotate(-17deg);
+	-o-transform: rotate(-17deg);
+}
+.bouncer2{
+	width: 16%;
+	z-index: 19;
+	margin-left: -48px;
+	top: 35px;
+	transform: rotate(5deg);
+	-webkit-transform: rotate(5deg);
+	-moz-transform: rotate(5deg);
+	-ms-transform: rotate(5deg);
+	-o-transform: rotate(5deg);
+}
+.bouncer3{
+	z-index: 18;
+	width: 16%;
+	margin-left: -44px;
+	top: 20px;
+	transform: rotate(-1deg);
+	-webkit-transform: rotate(-1deg);
+	-moz-transform: rotate(-1deg);
+	-ms-transform: rotate(-1deg);
+	-o-transform: rotate(-1deg);
+}
+.bouncer4{
+	z-index: 17;
+	width: 16%;
+	margin-left: -28px;
+	top: 9px;
+	transform: rotate(-14deg);
+	-webkit-transform: rotate(-14deg);
+	-moz-transform: rotate(-14deg);
+	-ms-transform: rotate(-14deg);
+	-o-transform: rotate(-14deg);
+}
+.bouncer5{
+	z-index: 16;
+	width: 15%;
+	margin-left: -30px;
+	top: 0;
+	transform: rotate(-6deg);
+	-webkit-transform: rotate(-6deg);
+	-moz-transform: rotate(-6deg);
+	-ms-transform: rotate(-6deg);
+	-o-transform: rotate(-6deg);
+}
+
+.bouncer.animated{
+ -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+/*
+ 13). Social Icon Hover
+ ----------------------------------------------*/
+
+
+
+.parallax-box {
+  height: 700px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.reward-section{
+	background-image: url(../images/reward-bg-h.jpg);
+	
+	
+}
+.sponsor{
+	background-image: url(../images/bg.jpg);
+}
+.covered-white22{
+	  position: relative;
+  padding-bottom: 1px;
+  z-index: 180;
+}
+
+
+.bottom-border {
+  position: absolute;
+  left: -3px;
+  bottom: -112px;
+  width: 105%;
+  height: 117px;
+  z-index: 20;
+  background-color: #fff;
+  transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  
+}
+
+.top-border{
+position: absolute;
+  left: -15px;
+  top: -3px;
+  width: 105%;
+  height: 117px;
+  z-index: 20;
+  background-color: #fff;
+  transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+ 
+}
+
+.map{
+	
+	background: url(../images/map.jpg) 0 0 no-repeat;
+	background-size:cover;
+}
+
+.mapmarker{
+	font-size:54px;
+	color:#82b541;
+}
+.past-event-col{
+	background:#82b541;
+	 transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+}
+.past-event-col img{
+	transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+}
+.past-event-col:hover img{
+	opacity:0.5;
+	 transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+}
+.fancybox-item.fancybox-close{
+	background:none;
+	top:-30px;
+	right:30px;
+}
+
+.fancybox-item.fancybox-close:before,.fancybox-item.fancybox-close:after{
+	content:'';
+	width:30px;
+	height:3px;
+	background:#82b541;
+	position:absolute;
+	left:0;
+	top:0;
+	transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	 transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+}
+.fancybox-item.fancybox-close:hover:before,.fancybox-item.fancybox-close:hover:after{
+	background:#fff;
+	  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+}
+.fancybox-item.fancybox-close:after{
+	
+	transform:rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+}
+
