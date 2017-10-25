@@ -1,0 +1,446 @@
+/*
+ ::Table Of Content
+ 1). Reset Css
+ 2.) Global Typography
+ 3.) Basic Skin Styles
+ 4.) header Section
+ 5.) Contant Section
+ 6.) footer Section
+ -----------------------------------------------*/
+
+
+/* 1)Eric Meyer's Global CSS Reset
+------------------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100% ;
+	vertical-align: top;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav {display: block;}
+ol, ul{list-style: none;}
+blockquote q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+a {text-decoration:none;}
+strong {font-weight:bold;}
+em {font-style:italic;}
+img { outline:none;}
+
+
+/*
+ 2.) Global typography
+ -----------------------------*/
+html{
+	-webkit-text-size-adjust:100%;
+}
+a, a:hover, a:focus, input, textarea, select {
+	outline: none;
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+
+
+textarea {
+	overflow: auto;
+	resize: none;
+}
+h2{
+	font-size: 5em;
+	font-weight: 700;
+	padding-bottom: 30px;
+}
+p{
+	color: #242424;
+	font-size: 1.4em;
+	font-weight: 300;
+	line-height: 1.2;
+	
+}
+
+img{
+	max-width: 100%;
+	height: auto
+}
+
+*{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.btnwrap{
+	text-align: center;
+}
+.custom-btn{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.8em;
+	color: #ffffff;
+	background-color: #90d23d;
+	padding: 16px 18px;
+	min-width: 200px;
+	text-transform: capitalize;
+	border: solid 1px #90d23d;
+	border-radius: 14px;
+	display: inline-block;
+	transition: 0.5s ease-in;
+}
+.custom-btn:hover{
+	color: #fff;
+	background-color: transparent;
+	border-color: #ffffff;
+	border-radius: 14px;
+}
+
+.btngray{
+	font-size: 2.2em;
+	background-color: #373737;
+	border-color: #373737;	
+}
+.btngray:focus{
+	border-radius: 14px;
+}
+
+.btngray:hover{
+	color: #373737;
+	background-color: #ffffff;
+	border-color: #373737;
+}
+.more-event-btn:hover{
+	background-color:rgb( 144, 210, 61 );
+	border-color:rgb( 144, 210, 61 );
+}
+[class^="icon-"]{
+	background-image: url(../images/icons.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    line-height: 10px;
+    vertical-align: middle;
+    width: 30px;
+    height: 26px;
+    margin-right: 40px;
+    position: relative;
+    top:2px;
+}
+
+
+/*Global Animations Style
+ ----------------------------------------*/
+
+
+
+/*
+ 3.) Basic Skin Styling
+ -----------------------------*/
+
+body {
+	font-size: 62.5%;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1;	
+	overflow-x: hidden;
+	/*background: url(../images/layout.png) center top no-repeat;*/
+}
+.wrapper {
+	width: 100%;
+	max-width: 1366px;
+	margin: 0 auto;
+}
+.wrapper-full{
+	max-width: 100%;
+}
+.page{
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.page-sm{
+	max-width: 1030px;
+}
+.page-mini{
+	max-width: 970px;
+}
+.page-micro{
+	max-width: 630px;
+}
+.covered-white{
+	background: #ffffff;
+	position: relative;
+	padding-bottom: 1px;
+	z-index: 180;
+}
+
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+.clearfix {
+	*zoom: 80%;
+}
+
+/*
+ 4.) Header Styling
+ ...........................*/
+
+
+#header{
+    padding-left: 2px;
+ 	position: fixed;
+ 	top:41px;
+ 	width: 100%;
+ 	left:0;
+ 	right: 0;
+ 	z-index: 1030;
+ 	transition: all 0.6s ease-in-out; 	
+}
+
+.wrapper #header{
+	width: 1366px;
+	margin: 0 auto;
+}
+.wrapper-full #header{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.fixed-header{
+	-webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+.header-inner{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.hamburger-header{	
+	background: #222323; 
+	/*background: #404041; 
+	padding: 10px 0;*/
+}
+
+#header.hamburger-header{
+	top: 0;
+	
+}
+
+h1{
+	float: left;
+	padding: 5px 0;
+}
+h1 .logo{
+	display: block;
+	padding-top: 15px;
+}
+/*.logo-text{
+	display: block;
+	text-transform: uppercase;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+	font-size: 1.8em;
+	color: rgb( 130, 181, 65 );
+	text-align: right;
+	margin-top: -20px;
+	letter-spacing: 3.5px;
+}*/
+
+
+
+#header nav{
+	float: right;
+}
+#header nav li{
+	float: left;
+	padding: 30px 21px;
+}
+#header nav li:last-child{
+	padding-right: 12px;
+}
+#header nav li a{
+	color: #ffffff;
+	font-size: 1.5em;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+
+#header nav li a:hover, #header nav li.active_nav a{
+	color: #82b541;
+}
+
+
+
+
+
+.toggle-menu{
+	display: none;
+	float: right;
+	position: relative;
+	top: 22px;
+	right: 20px;
+	z-index: 90;
+	cursor: pointer;
+}
+
+.toggle-menu .bar {
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 3px;
+	top: 50%;
+	left: 50%;
+	margin-top: -1px;
+	margin-left: -10px;
+	background-color: #fff;
+	-webkit-transition: margin .15s ease-out .25s, opacity .15s ease-out .25s, -webkit-transform .15s ease-out;
+	transition: margin .15s ease-out .25s, opacity .15s ease-out .25s, -webkit-transform .15s ease-out
+}
+.toggle-menu .bar.bar-1 {
+	margin-top: -8px
+}
+.toggle-menu .bar.bar-3 {
+	margin-top: 6px
+}
+.toggle-menu.open-menu .bar {
+	-webkit-transform: scale(.85);
+	-ms-transform: scale(.85);
+	transform: scale(.85);
+	-webkit-transition: margin .15s ease-out, opacity .15s ease-out, -webkit-transform .15s ease-out .25s;
+	transition: margin .15s ease-out, opacity .15s ease-out, -webkit-transform .15s ease-out .25s
+}
+
+.toggle-menu.open-menu .bar-1 {
+	margin-top: -1px;
+	-webkit-transform: rotate3d(0,0,1,-45deg);
+	-ms-transform: rotate3d(0,0,1,-45deg);
+	transform: rotate3d(0,0,1,-45deg)
+}
+.toggle-menu.open-menu .bar-2 {
+	opacity: 0;
+	filter: alpha(opacity=0)
+}
+.toggle-menu.open-menu .bar-3 {
+	margin-top: -1px;
+	-webkit-transform: rotate3d(0,0,1,45deg);
+	-ms-transform: rotate3d(0,0,1,45deg);
+	transform: rotate3d(0,0,1,45deg)
+}
+
+
+/*
+ 6.) Footer Styling
+ ...........................*/
+
+#footer{
+	position: relative;
+	clear: both;
+	background: #90d23d;
+	padding: 39px 0;
+	z-index: 100;
+}
+.social{
+	margin-bottom: 10px;
+}
+.social ul{
+	text-align: center;
+}
+.social li{
+	display: inline-block;
+	padding: 22px 5px;
+}
+.social li a{
+	display: block;
+	text-indent: -9999px;
+	width: 47px;
+	height: 47px;
+	background-image: url(../images/sprite.png);
+	background-repeat: no-repeat;
+	-webkit-transition: box-shadow 0.2s;
+	-moz-transition: box-shadow 0.2s;
+	transition: box-shadow 0.2s;
+	border-radius: 50%;
+}
+.social li a:hover{
+	box-shadow: 0 0 0 8px rgba(255,255,255,0.4);
+	color: #fff;
+}
+.social li a.facebook{
+	background-position: 0 0;
+}
+.social li a.twitter{
+	background-position: -62px 0;
+}
+.social li a.linkedin{
+	background-position: -122px 0;
+}
+.social li a.google{
+	background-position: -182px 0;
+}
+.social li a.tumblr{
+	background-position: -242px 0;
+}
+.copyright span{
+	text-align: center;
+	display: block;
+	color: #ffffff;
+	font-size: 1.8em;
+	font-weight: 300;
+	padding-bottom: 5px;
+}
+.scrollTop{
+	position: absolute;
+	right:-3px;
+	top: 50%;
+	margin-top: -9.5px;
+	width: 31px;
+	height: 19px;
+	
+	background-repeat: no-repeat;
+	background-position: right 0;
+	font-size:32px;
+	color:#000;
+	transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+}
+.scrollTop:hover{
+	transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+	animation:up 1s ease infinite 0s;
+	-webkit-animation:up 1s ease infinite 0s;
+	color:#fff;
+}
+@keyframes up{
+	0%{
+		transform:translateY(0)
+	}
+	50%{
+		transform:translateY(-10px)
+	}
+	100%{
+		transform:translateY(0px)
+	}
+}
+@-webkit-keyframes up{
+	0%{
+		-webkit-transform:translateY(0)
+	}
+	50%{
+		transform:translateY(-10px)
+	}
+	100%{
+		-webkit-transform:translateY(0px)
+	}
+}
+
+.slides li > img{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	max-width:none;
+	
+	
+}
+
