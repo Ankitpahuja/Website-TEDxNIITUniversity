@@ -39,7 +39,7 @@
 	width: 105%;
 	height: 100px;
 	z-index: 20;
-    background-color: #fff;
+    background-color: #000000;
     transform: rotate(-4deg);
     -webkit-transform: rotate(-4deg);
     transform-origin: 0 0;
@@ -54,7 +54,7 @@
 .timer-section{
 	max-width: 970px;
 	margin: 0 auto;
-	border: solid 2px #82b541;
+	border: solid 2px #ffffff;
 	border-radius: 18px;
 	padding: 8px 77px 56px;
 	margin-bottom:16%;	
@@ -76,7 +76,7 @@
 	top: 42px;
 	width: 6px;
 	height: 8px;
-	background-color: #ffffff;
+	background-color: rgb(192, 57, 43);
 }
 .countdown-section:after{
 	top: auto;
@@ -92,7 +92,7 @@
 	font-size: 13em;
 	font-family: 'Roboto Slab', serif;
 	font-weight: 100;
-	color: rgb( 255, 255, 255 );
+	color: rgb(236, 240, 241);
 	display: block;
 	text-shadow: 0.5px 0.134px 1px rgba( 40, 40, 40,1 );
 	margin-bottom: 10px;
@@ -103,7 +103,7 @@
 	font-size: 2.5em;
 	font-family: 'Roboto Slab', serif;
 	font-weight: 400;
-	color: rgb( 255, 255, 255 );
+	color: rgb(255,255,255);
 	text-transform: uppercase;
 	display: block;
 }
@@ -113,7 +113,7 @@
  ----------------------------------------------*/
 
 .register-box{
-	background-color: rgb( 255, 255, 255 );
+	background-color: #eb2b1e;
     box-shadow: 0.5px 0.866px 2px 0px rgb( 35, 31, 32 );
 	width: 41.5%;
 	float: right;
@@ -123,7 +123,7 @@
 	z-index: 30;
 }
 .register-box h3  {
-	color: #252525;
+	color: #000000;
 	font-size: 3em;
 	font-weight: 700;
 	display: block;
@@ -144,10 +144,10 @@
 .formcontrol{
   border-style: solid;
   border-width: 1px;
-  border-color: rgb( 190, 190, 190 );
+  border-color: #000000;
   border-radius: 5px;
-  background-color: rgb( 255, 255, 255 );
-  color: #6c6c6c;
+  background-color: rgb(255,255,255);
+  color:#6c6c6c;
   font-size: 1.9em;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -159,14 +159,14 @@
 .formcontrol:focus,.back-btn:focus{
   transition: all 0.5s ease-in;
   -webkit-transition: all 0.5s ease-in;
-  border-color: rgb( 144, 210, 61 );
+  border-color:#000000;
 }
 .formbtn,.back-btn{
   display: inline-block;
   margin-top: 20px;
   border-radius: 5px;
-  background-color: rgb( 144, 210, 61 );
-  border: solid 1px rgb( 144, 210, 61 );
+  background-color: #373737;
+  border: solid 1px #373737;
   width: 100%;
   color: #ffffff;
   font-size: 2.2em;
@@ -177,8 +177,8 @@
 }
 .formbtn:hover,.back-btn:hover{
 	transition: all 0.5s ease-in;
-	background-color: rgb( 255, 255, 255);
-     color: rgb( 144, 210, 61 );
+	background-color: rgb(0,0,0);
+     color: rgb( 255,255,255 );
 }
 .back-btn:hover{
 	 border: solid 1px rgb( 255, 255, 255 );
@@ -204,7 +204,7 @@
 .note span{
 	display: block;
 	text-align: center;
-	color: #6c6c6c;
+	color: #000000;
 	font-size: 1.5em;
 	font-weight: 300;
 	line-height: 1.1;
@@ -242,7 +242,7 @@
 
 section#menu-event-detail::before {
   content: '';
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(173,216,230);
   width: 105%;
   height:350px;
   position: absolute;
@@ -312,19 +312,19 @@ svg.contact{
 }
 .table-row{
 	width: 100%;
-	background-color: #373737;
+	background-color: #000000;
 	padding: 21px 0;
 }
 .table-row.bottom{
 	border-radius: 0 0  6px 6px;
 }
 .head{
-	background-color: #a3cc40;
+	background-color: #DA291C;
 	border-radius: 6px 6px 0 0;
 	padding: 22px 0;
 }
 .alt{
-	background-color: #4b4d4f;
+	background-color: #2D2926;
 }
 .table-row ul{
 	overflow: hidden;
@@ -374,7 +374,7 @@ svg.contact{
 	display: none;
 	width: 100%;
 	padding: 20px 50px;
-	color: #cccccc;
+	color: #ffffff;
 	font-size: 1.5em;
 	text-align: justify;
 	line-height: 1.4;
@@ -456,12 +456,13 @@ svg.contact{
 	margin-bottom: 62px;
 }
 .speaker-col{
+	/*background: #ff1919;*/
 	width: 30.8%;
 	float: left;
 	margin-right: 3.8%;
 	position: relative;
 	z-index: 1;
-	perspective: 1000;
+	perspective: 1000; 
 }
 .speaker-col:last-child{
 	margin-right: 0;
@@ -471,6 +472,7 @@ svg.contact{
 }
 .speaker-col{
 	text-align: center;	
+	
 }
 
 
@@ -500,7 +502,7 @@ svg.contact{
 }
 .flippedcontent h2{
 	font-size: 4.5em;
-	color: #ffffff;
+	color: #000000;
 	font-weight: 700;
 	display: block;	
 	position: relative;
@@ -514,7 +516,7 @@ svg.contact{
 	content: "";
 	width: 80px;
 	height: 5px;
-	background-color: #ffffff;
+	background-color: #000000;
 }
 .flippedcontent p{
 	display: block;
@@ -526,7 +528,7 @@ svg.contact{
 	width: 100%;
 }
 .flippedcontent p a{
-	color: #ffffff;
+	color:#ffffff;
 }
 .flippedcontent p a:hover{
 	text-decoration:underline;
@@ -548,7 +550,7 @@ svg.contact{
 	border-radius: 50%;
 }
 .flippedcontent li a:hover {
-	color: #eea303;
+	color: #000000;
 	box-shadow: 0 0 0 3px #fff;
 	
 }
@@ -804,7 +806,7 @@ svg.contact{
 }
 .contact-form{
 	margin: 73px 0;
-	background: #ffffff;
+	background: #DA291C;
 	float:left;
 	width: 100%;
 	padding: 60px 70px 35px;
@@ -825,7 +827,7 @@ svg.contact{
 }
 .address span{
 	display: block;
-	color: #454444;
+	color: #000000;
 	font-size: 1.8em;
 	font-weight: 300;
 	padding-bottom: 4px;
@@ -846,8 +848,8 @@ svg.contact{
 	font-weight: 400;
 }
 .contact-us .formbtn:hover{
-	background-color: transparent;
-	color: #373737;
+	background-color: #000000;
+	color: #ffffff;
 }
 
 
@@ -968,7 +970,7 @@ svg.bounce-image{
   width: 105%;
   height: 117px;
   z-index: 20;
-  background-color: #fff;
+  background-color: #000000;
   transform: rotate(-3deg);
   -webkit-transform: rotate(-3deg);
   transform-origin: 0 0;
@@ -983,7 +985,7 @@ position: absolute;
   width: 105%;
   height: 117px;
   z-index: 20;
-  background-color: #fff;
+  background-color: #000000;
   transform: rotate(-3deg);
   -webkit-transform: rotate(-3deg);
   transform-origin: 0 0;
@@ -999,10 +1001,10 @@ position: absolute;
 
 .mapmarker{
 	font-size:54px;
-	color:#82b541;
+	color:#000000;
 }
 .past-event-col{
-	background:#82b541;
+	background:#ff1919;
 	 transition: all 0.5s linear;
   -webkit-transition: all 0.5s linear;
 }
@@ -1025,7 +1027,7 @@ position: absolute;
 	content:'';
 	width:30px;
 	height:3px;
-	background:#82b541;
+	background:#ff1919;
 	position:absolute;
 	left:0;
 	top:0;

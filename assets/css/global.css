@@ -77,11 +77,11 @@ img{
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.8em;
 	color: #ffffff;
-	background-color: #90d23d;
+	background-color: #DA2912;
 	padding: 16px 18px;
 	min-width: 200px;
 	text-transform: capitalize;
-	border: solid 1px #90d23d;
+	border: solid 1px #ff1919;
 	border-radius: 14px;
 	display: inline-block;
 	transition: 0.5s ease-in;
@@ -103,13 +103,13 @@ img{
 }
 
 .btngray:hover{
-	color: #373737;
-	background-color: #ffffff;
+	color: #ffffff;
+	background-color: #000000;
 	border-color: #373737;
 }
 .more-event-btn:hover{
-	background-color:rgb( 144, 210, 61 );
-	border-color:rgb( 144, 210, 61 );
+	background-color:#000000;
+	border-color:#373737;
 }
 [class^="icon-"]{
 	background-image: url(../images/icons.png);
@@ -218,7 +218,7 @@ body {
 	margin: 0 auto;
 }
 .hamburger-header{	
-	background: #222323; 
+	background: #545454; 
 	/*background: #404041; 
 	padding: 10px 0;*/
 }
@@ -268,7 +268,7 @@ h1 .logo{
 }
 
 #header nav li a:hover, #header nav li.active_nav a{
-	color: #82b541;
+	color: #ff0000;
 }
 
 
@@ -337,7 +337,7 @@ h1 .logo{
 #footer{
 	position: relative;
 	clear: both;
-	background: #90d23d;
+	background: #000000;
 	padding: 39px 0;
 	z-index: 100;
 }
