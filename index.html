@@ -60,9 +60,9 @@ Ankit Pahuja (https://ankitpahuja.me/)
 							<li class="anchorlink" name="#menu-event-detail"><a href="javascript:void(0);">About</a></li>
 							<li class="anchorlink"><a href="http://blog.tedxniituniversity.com">Blog</a></li>
 							<li  class="anchorlink" name="#menu-speakers"><a href="javascript:void(0);" >Speakers</a></li>
-							<li  class="anchorlink" name="#menu-sponsors"><a href="javascript:void(0);"  >Sponsors</a></li>
+							<li  class="anchorlink" name="#"><a href="javascript:void(0);"  >Sponsors</a></li>
 							<li  class="anchorlink" name="#menu-contact"><a href="javascript:void(0);"  >Contact</a></li>
-							<li  class="anchorlink"><a href="#">Team</a></li>
+							<li  class="anchorlink"><a href="team.html">Team</a></li>
 							<li  class="custom-btn"><a href="#">Buy Tickets</a></li>
 						</ul>
 					</nav>
@@ -73,9 +73,9 @@ Ankit Pahuja (https://ankitpahuja.me/)
 			<section id="intro" class="has-image">	
 				<div class="intro-wrapper flexslider">
 					<ul class="slides">
-						<li><img src="assets/images/hero-bg.jpg" alt="" /></li>
-						<li><img src="assets/images/hero-bg.jpg" alt="" /></li>
-						<li><img src="assets/images/hero-bg.jpg" alt="" /></li>
+						<li><img src="assets/images/niituniversity.jpg" alt="" /></li>
+						<li><img src="assets/images/niituniversity.jpg" alt="" /></li>
+						<li><img src="assets/images/niituniversity.jpg" alt="" /></li>
 					</ul>
 				</div>		
 				<div class="page page-sm">
@@ -103,24 +103,26 @@ Ankit Pahuja (https://ankitpahuja.me/)
 					<div class="welcome-inner clearfix">
 						<div class="welcome-text">
 							<h2>The Precipice!</h2>
-							<p>125 words - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum minima inventore, voluptate ipsam beatae neque, magni perspiciatis cupiditate, velit animi ducimus saepe reprehenderit, architecto praesentium quisquam! Debitis asperiores quod voluptatibus dignissimos maxime iure eveniet quibusdam minima molestiae quae molestias animi quo quas, velit laborum unde dolorem, quos possimus a ratione doloremque eos, quasi ipsam distinctio dicta. Sint alias tenetur optio id placeat ducimus impedit architecto, consequatur blanditiis, beatae saepe. Hic quidem suscipit sed impedit, recusandae placeat temporibus maiores. Quidem qui animi numquam voluptatem nam magni, doloribus ab. Culpa expedita, dolorem, iste et excepturi unde quas rerum eveniet cupiditate earum non soluta eaque. Dicta excepturi consequatur facilis, laboriosam a deserunt architecto veritatis at ad error ex animi officia non, exercitationem adipisci ea debitis esse fugit illo!  
+							<p><strong>Precipice<strong> - a small word which holds multiple meanings in different spheres of our life. For mountaineers, it's the place from where they can taste the success of their hard work as they enjoy the world stretching itself towards the horizon. For an entrepreneur, it may mean a benchmark the he/she needs to cross to set new records. For lawmakers, it may mean a gap between two ethnic groups which needs to be filled up by creating a feeling of communal harmony.<br><br>A <strong>Precipice<strong> is a place meant for free-thinkers. A place to set your mind free and open up to opportunities without any fear of failure. With hope and optimism, we stand at the <strong>Precipice<strong>, ready to make this event a memorable one. 	
 							</p>
 						</div>
 						<!-- End Welcome-text Section -->
 						<div class="register-box animated slideInUp">
-							<form name="form" action="insert.php" method="POST">
+							<form id="myForm" name="form" action="insert.php" method="POST">
 								<h3>Sign up for our event</h3>
 								<div class="row"><input type="text" placeholder="Enter your name" class="formcontrol" name="Name" required /></div>
 								<div class="row"><input type="email" placeholder="Enter your email" class="formcontrol" name="email" required/></div>
 								<div class="row"><input type="number" placeholder="Phone number" class="formcontrol" name="phone_no" required/></div>
 								<div class="row"><input type="text" placeholder="Want us to call back?" class="formcontrol" name="yes_no" required/></div>
-								<div class="row"><input type="submit" value="Let me in!" class="formbtn" /></div>
+								<div class="row"><input type="submit" value="Let me in!" class="formbtn" id="sub"/></div>
 								<div class="note">
 									<span>Hurry up, Limited seats availble</span>
 									<span>*we will never spam your email</span>
 								</div>
 							</form>
 						</div>
+
+						<span id="result"></span>
 						<!-- End Register-box Section -->
 					</div>
 					<!-- End Welcome-inner Section -->
@@ -234,6 +236,7 @@ Ankit Pahuja (https://ankitpahuja.me/)
 			<!-- End Welcome Section -->
 			
 			
+			<!-- Start of Speaker's Section -->
 			
 			<section id="menu-speakers" class="speaker covered-white">
 				<div class="page page-sm">
@@ -243,11 +246,11 @@ Ankit Pahuja (https://ankitpahuja.me/)
 						<div class="speaker-section">
 							<div class="speaker-row clearfix">
 								<div class="speaker-col">
-									<div class="view view-sixth">
-										<img src="assets/images/speaker1.png" alt="" />
+									<div class="view view-sixth" data-toggle="modal" data-target="#myModal">
+										<img src="assets/images/speaker1.png" alt=""  />
 										<div class="mask flippedcontent">
 											<h2>Coming Soon</h2>
-											<p><a href="#">Coming Soon</a></p>
+											<p><a href="#">Organizer</a></p>
 											<ul>
 												<li><a href="#" class="facebook">Facebook</a></li>
 												<li><a href="#" class="twitter">twitter</a></li>
@@ -257,11 +260,11 @@ Ankit Pahuja (https://ankitpahuja.me/)
 									</div>
 								</div>
 								<div class="speaker-col">
-									<div class="view view-sixth">
+									<div class="view view-sixth" data-toggle="modal" data-target="#myModal1">
 										<img src="assets/images/speaker2.png" alt="" />
 										<div class="mask flippedcontent">
 											<h2>Coming Soon</h2>
-											<p><a href="#">Coming Soon</a></p>
+											<p><a href="#">Co-Organizer</a></p>
 											<ul>
 												<li><a href="#" class="facebook">Facebook</a></li>
 												<li><a href="#" class="twitter">twitter</a></li>
@@ -271,11 +274,11 @@ Ankit Pahuja (https://ankitpahuja.me/)
 									</div>
 								</div>
 								<div class="speaker-col">
-									<div class="view view-sixth">
+									<div class="view view-sixth" data-toggle="modal" data-target="#myModal2">
 										<img src="assets/images/speaker3.png" alt="" />
 										<div class="mask flippedcontent">
 											<h2>Coming Soon</h2>
-											<p><a href="#">Coming Soon</a></p>
+											<p><a href="#">Treasurer</a></p>
 											<ul>
 												<li><a href="#" class="facebook">Facebook</a></li>
 												<li><a href="#" class="twitter">twitter</a></li>
@@ -285,44 +288,14 @@ Ankit Pahuja (https://ankitpahuja.me/)
 									</div>
 								</div>
 							</div>
+							
 							<div class="speaker-row clearfix">
 								<div class="speaker-col">
-									<div class="view view-sixth">
-										<img src="assets/images/speaker4.png" alt="" />
-										<div class="mask flippedcontent">
-											<h2>Coming Soon</h2>
-											<p><a href="#">Coming Soon</a></p>
-											<ul>
-												<li><a href="#" class="facebook">Facebook</a></li>
-												<li><a href="#" class="twitter">twitter</a></li>
-												<li><a href="#" class="Web-portfolio">dribbble </a></li>
-											</ul>
-										</div>								
-									</div>
-								</div>
-								<div class="speaker-col"><a href="#"><img src="assets/svg/moderator.svg" alt="" class="svg moderator" /></a></div>
-								<div class="speaker-col">
-									<div class="view view-sixth">
-										<img src="assets/images/speaker5.png" alt="" />
-										<div class="mask flippedcontent">
-											<h2>Coming Soon</h2>
-											<p><a href="#">Coming Soon</a></p>
-											<ul>
-												<li><a href="#" class="facebook">Facebook</a></li>
-												<li><a href="#" class="twitter">twitter</a></li>
-												<li><a href="#" class="Web-portfolio">dribbble </a></li>
-											</ul>
-										</div>								
-									</div>
-								</div>
-							</div>
-							<div class="speaker-row clearfix">
-								<div class="speaker-col">
-									<div class="view view-sixth">
+									<div class="view view-sixth" data-toggle="modal" data-target="#myModal3">
 										<img src="assets/images/speaker6.png" alt="" />
 										<div class="mask flippedcontent">
 											<h2>Coming Soon</h2>
-											<p><a href="#">Coming Soon</a></p>
+											<p><a href="#">Arts & Design - Lead</a></p>
 											<ul>
 												<li><a href="#" class="facebook">Facebook</a></li>
 												<li><a href="#" class="twitter">twitter</a></li>
@@ -332,11 +305,11 @@ Ankit Pahuja (https://ankitpahuja.me/)
 									</div>
 								</div>
 								<div class="speaker-col">
-									<div class="view view-sixth">
+									<div class="view view-sixth" data-toggle="modal" data-target="#myModal4">
 										<img src="assets/images/speaker7.png" alt="" />
 										<div class="mask flippedcontent">
 											<h2>Coming Soon</h2>
-											<p><a href="#">Coming Soon</a></p>
+											<p><a href="#">Human Resource</a></p>
 											<ul>
 												<li><a href="#" class="facebook">Facebook</a></li>
 												<li><a href="#" class="twitter">twitter</a></li>
@@ -346,7 +319,7 @@ Ankit Pahuja (https://ankitpahuja.me/)
 									</div>
 								</div>
 								<div class="speaker-col">
-									<div class="view view-sixth">
+									<div class="view view-sixth" data-toggle="modal" data-target="#myModal5">
 										<img src="assets/images/speaker8.png" alt="" />
 										<div class="mask flippedcontent">
 											<h2>Coming Soon</h2>
@@ -361,27 +334,604 @@ Ankit Pahuja (https://ankitpahuja.me/)
 								</div>
 							</div>
 						</div>
+
+						<div class="speaker-section">
+							<div class="speaker-row clearfix">
+								<div class="speaker-col">
+									<div class="view view-sixth" data-toggle="modal" data-target="#myModal6">
+										<img src="assets/images/speaker1.png" alt="" />
+										<div class="mask flippedcontent">
+											<h2>Coming Soon</h2>
+											<p><a href="#">Organizer</a></p>
+											<ul>
+												<li><a href="#" class="facebook">Facebook</a></li>
+												<li><a href="#" class="twitter">twitter</a></li>
+												<li><a href="#" class="Web-portfolio">dribbble </a></li>
+											</ul>
+										</div>								
+									</div>
+								</div>
+								<div class="speaker-col">
+									<div class="view view-sixth" data-toggle="modal" data-target="#myModal7">
+										<img src="assets/images/speaker2.png" alt="" />
+										<div class="mask flippedcontent">
+											<h2>Coming Soon</h2>
+											<p><a href="#">Co-Organizer</a></p>
+											<ul>
+												<li><a href="#" class="facebook">Facebook</a></li>
+												<li><a href="#" class="twitter">twitter</a></li>
+												<li><a href="#" class="Web-portfolio">dribbble </a></li>
+											</ul>
+										</div>								
+									</div>
+								</div>
+								<div class="speaker-col">
+									<div class="view view-sixth" data-toggle="modal" data-target="#myModal8">
+										<img src="assets/images/speaker3.png" alt="" />
+										<div class="mask flippedcontent">
+											<h2>Coming Soon</h2>
+											<p><a href="#">Treasurer</a></p>
+											<ul>
+												<li><a href="#" class="facebook">Facebook</a></li>
+												<li><a href="#" class="twitter">twitter</a></li>
+												<li><a href="#" class="Web-portfolio">dribbble </a></li>
+											</ul>
+										</div>								
+									</div>
+								</div>
+							</div>
+						
+
 					</section>
 				</div>
 			</section>
-			<!-- End Speaker Section -->
-			
-			<section id="menu-sponsors" class="sponsor covered-white parallax-box parallax">
-				<span class="top-border"></span>
-				<span class="bottom-border"></span>					
-				<div class="page page-micro sponsor-inner">
-					<h2>Sponsor Our Event!</h2>
-					<p>If you want to help us making this event lively and successful, help us by sponsoring our event! This will help us bring in more people, have better livestreaming equipment, maybe even our own chef! You can also sponsor us by giving away free swag at the event!</p>
-					<p>Here’s who have sponsored us already:</p>
-					<ul>
-						<li><img src="assets/images/mailchimp.png" alt="" /></li>
-						<li><img src="assets/images/animoto.jpg" alt="" /></li>
+
+			<section id="menu-speakers" class="speaker covered-white">
+				<div class="page page-sm">
+					<section class="speaker-inner">
+						<div class="speaker-section">
+							<div class="speaker-row clearfix">
+								<div class="speaker-col">
+									<div class="view view-sixth" data-toggle="modal" data-target="#myModal9">
+										<img src="assets/images/speaker1.png" alt="" />
+										<div class="mask flippedcontent">
+											<h2>Coming Soon</h2>
+											<p><a href="#">Organizer</a></p>
+											<ul>
+												<li><a href="#" class="facebook">Facebook</a></li>
+												<li><a href="#" class="twitter">twitter</a></li>
+												<li><a href="#" class="Web-portfolio">dribbble </a></li>
+											</ul>
+										</div>								
+									</div>
+								</div>
+								<div class="speaker-col">
+									<div class="view view-sixth" data-toggle="modal" data-target="#myModal10">
+										<img src="assets/images/speaker2.png" alt="" />
+										<div class="mask flippedcontent">
+											<h2>Coming Soon</h2>
+											<p><a href="#">Co-Organizer</a></p>
+											<ul>
+												<li><a href="#" class="facebook">Facebook</a></li>
+												<li><a href="#" class="twitter">twitter</a></li>
+												<li><a href="#" class="Web-portfolio">dribbble </a></li>
+											</ul>
+										</div>								
+									</div>
+								</div>
+								<div class="speaker-col">
+									<div class="view view-sixth" data-toggle="modal" data-target="#myModal11">
+										<img src="assets/images/speaker3.png" alt="" />
+										<div class="mask flippedcontent">
+											<h2>Coming Soon</h2>
+											<p><a href="#">Treasurer</a></p>
+											<ul>
+												<li><a href="#" class="facebook">Facebook</a></li>
+												<li><a href="#" class="twitter">twitter</a></li>
+												<li><a href="#" class="Web-portfolio">dribbble </a></li>
+											</ul>
+										</div>								
+									</div>
+								</div>
+							</div>
+							
+							<div class="speaker-row clearfix">
+								<div class="speaker-col">
+									<div class="view view-sixth" data-toggle="modal" data-target="#myModal12">
+										<img src="assets/images/speaker6.png" alt="" />
+										<div class="mask flippedcontent">
+											<h2>Coming Soon</h2>
+											<p><a href="#">Arts & Design - Lead</a></p>
+											<ul>
+												<li><a href="#" class="facebook">Facebook</a></li>
+												<li><a href="#" class="twitter">twitter</a></li>
+												<li><a href="#" class="Web-portfolio">dribbble </a></li>
+											</ul>
+										</div>								
+									</div>
+								</div>
+								<div class="speaker-col">
+									<div class="view view-sixth" data-toggle="modal" data-target="#myModal13">
+										<img src="assets/images/speaker7.png" alt="" />
+										<div class="mask flippedcontent">
+											<h2>Coming Soon</h2>
+											<p><a href="#">Human Resource</a></p>
+											<ul>
+												<li><a href="#" class="facebook">Facebook</a></li>
+												<li><a href="#" class="twitter">twitter</a></li>
+												<li><a href="#" class="Web-portfolio">dribbble </a></li>
+											</ul>
+										</div>								
+									</div>
+								</div>
+								<div class="speaker-col">
+									<div class="view view-sixth" data-toggle="modal" data-target="#myModal14">
+										<img src="assets/images/speaker8.png" alt="" />
+										<div class="mask flippedcontent">
+											<h2>Coming Soon</h2>
+											<p><a href="#">Coming Soon</a></p>
+											<ul>
+												<li><a href="#"facebook">Facebook</a></li>
+												<li><a href="#" class="twitter">twitter</a></li>
+												<li><a href="#" class="Web-portfolio">dribbble </a></li>
+											</ul>
+										</div>								
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="speaker-section">
+							<div class="speaker-row clearfix">
+								<div class="speaker-col">
+									<div class="view view-sixth" data-toggle="modal" data-target="#myModal15">
+										<img src="assets/images/speaker1.png" alt="" />
+										<div class="mask flippedcontent">
+											<h2>Coming Soon</h2>
+											<p><a href="#">Organizer</a></p>
+											<ul>
+												<li><a href="#" class="facebook">Facebook</a></li>
+												<li><a href="#" class="twitter">twitter</a></li>
+												<li><a href="#" class="Web-portfolio">dribbble </a></li>
+											</ul>
+										</div>								
+									</div>
+								</div>
+								<div class="speaker-col">
+									<div class="view view-sixth" data-toggle="modal" data-target="#myModal16">
+										<img src="assets/images/speaker2.png" alt="" />
+										<div class="mask flippedcontent">
+											<h2>Coming Soon</h2>
+											<p><a href="#">Co-Organizer</a></p>
+											<ul>
+												<li><a href="#" class="facebook">Facebook</a></li>
+												<li><a href="#" class="twitter">twitter</a></li>
+												<li><a href="#" class="Web-portfolio">dribbble </a></li>
+											</ul>
+										</div>								
+									</div>
+								</div>
+								<div class="speaker-col">
+									<div class="view view-sixth" data-toggle="modal" data-target="#myModal17">
+										<img src="assets/images/speaker3.png" alt="" />
+										<div class="mask flippedcontent">
+											<h2>Coming Soon</h2>
+											<p><a href="#">Treasurer</a></p>
+											<ul>
+												<li><a href="#" class="facebook">Facebook</a></li>
+												<li><a href="#" class="twitter">twitter</a></li>
+												<li><a href="#" class="Web-portfolio">dribbble </a></li>
+											</ul>
+										</div>								
+									</div>
+								</div>
+							</div>
 						
-					</ul>
-					<a href="mailto:partnership@tedxniituniversity.com" class="custom-btn">Partner with us!</a>
+
+					</section>
 				</div>
 			</section>
-			<!-- End Sponsor Section -->
+
+			 <!-- Modal Section -->
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h2 class="modal-title" id="exampleModalLabel">Speaker's Name</h2>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem necessitatibus accusamus commodi animi eius quisquam, provident itaque corrupti dolor modi. Modi perspiciatis molestiae tenetur non, nobis nesciunt explicabo harum? Velit eligendi, nisi voluptate, obcaecati accusamus, reiciendis facere, consectetur quam sequi dignissimos in modi aliquid totam debitis doloremque eius delectus. Explicabo ipsam est doloremque, sunt vitae facilis maxime. Tenetur, sequi, voluptatum! Laudantium enim ab nisi sunt, cumque ea numquam quaerat maiores praesentium. Blanditiis quia aspernatur vel veritatis, corporis distinctio quasi recusandae asperiores nam, et quis, obcaecati nostrum consequatur animi rerum? Ex impedit praesentium ipsam iste qui recusandae magnam incidunt, laboriosam iusto. Cupiditate ipsa in qui consequatur? Doloremque dignissimos illo in qui dolorum sint, impedit maxime modi atque! Odio voluptate, aperiam sapiente, ipsam, atque commodi earum fugiat minima ratione, consequatur facilis eos corporis ducimus eius omnis sint excepturi! Labore, reiciendis similique ex! Natus blanditiis accusantium, ad eos laboriosam nobis praesentium eaque sit quaerat odio ullam, ea beatae iure accusamus fugiat dolore dolores deleniti quae aliquam error. Quisquam laudantium voluptate molestiae officiis voluptatibus perferendis deserunt dignissimos ratione veniam excepturi beatae velit quidem dolorem reprehenderit possimus nam cumque ex, quo saepe impedit eligendi, praesentium accusamus tenetur. Tempore expedita, impedit, temporibus aperiam iusto cupiditate officiis ea a mollitia magni, sapiente odio fugit. Hic cupiditate suscipit expedita quas velit voluptatibus a consequatur harum qui, aliquid voluptas ratione accusamus blanditiis reprehenderit laboriosam rem. Quod, dolores eligendi autem at soluta doloremque reprehenderit nobis id laboriosam ipsam, distinctio fugit dolore. Consectetur, libero error tenetur numquam sint placeat dolore deserunt recusandae similique nulla repudiandae quaerat porro ratione incidunt maiores inventore ullam fugiat sed ad cupiditate impedit tempora nobis sit facere. Dolor aut officiis distinctio recusandae totam maiores explicabo mollitia facere eius, itaque laboriosam magnam, quisquam repudiandae? Tempora nemo aperiam, vero, magni quos natus. Debitis voluptate obcaecati nobis eos deleniti corporis culpa ipsa odio facilis. Nostrum in reprehenderit veniam, laboriosam perferendis maxime autem commodi dignissimos dolore, ut, nisi assumenda molestias voluptas atque. Labore consectetur reprehenderit magnam, sed, voluptatibus dolorum iusto excepturi obcaecati dicta iure reiciendis ipsum! Praesentium, iste cumque, in vero consequuntur repellat. Facere optio delectus excepturi dolorum atque illo aliquid adipisci suscipit consequatur sint, magni placeat recusandae autem et assumenda quisquam tempora necessitatibus! Nulla optio nesciunt reiciendis repudiandae omnis! Doloremque neque labore animi ab, iure minima totam suscipit iusto dignissimos facere, maxime necessitatibus et eligendi expedita inventore quo exercitationem magni fuga nobis cumque reprehenderit corrupti dolorum. Iste magnam, delectus dolor!
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- Modal 1 -->
+
+			<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h2 class="modal-title" id="exampleModalLabel">Speaker's Name</h2>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem necessitatibus accusamus commodi animi eius quisquam, provident itaque corrupti dolor modi. Modi perspiciatis molestiae tenetur non, nobis nesciunt explicabo harum? Velit eligendi, nisi voluptate, obcaecati accusamus, reiciendis facere, consectetur quam sequi dignissimos in modi aliquid totam debitis doloremque eius delectus. Explicabo ipsam est doloremque, sunt vitae facilis maxime. Tenetur, sequi, voluptatum! Laudantium enim ab nisi sunt, cumque ea numquam quaerat maiores praesentium. Blanditiis quia aspernatur vel veritatis, corporis distinctio quasi recusandae asperiores nam, et quis, obcaecati nostrum consequatur animi rerum? Ex impedit praesentium ipsam iste qui recusandae magnam incidunt, laboriosam iusto. Cupiditate ipsa in qui consequatur? Doloremque dignissimos illo in qui dolorum sint, impedit maxime modi atque! Odio voluptate, aperiam sapiente, ipsam, atque commodi earum fugiat minima ratione, consequatur facilis eos corporis ducimus eius omnis sint excepturi! Labore, reiciendis similique ex! Natus blanditiis accusantium, ad eos laboriosam nobis praesentium eaque sit quaerat odio ullam, ea beatae iure accusamus fugiat dolore dolores deleniti quae aliquam error. Quisquam laudantium voluptate molestiae officiis voluptatibus perferendis deserunt dignissimos ratione veniam excepturi beatae velit quidem dolorem reprehenderit possimus nam cumque ex, quo saepe impedit eligendi, praesentium accusamus tenetur. Tempore expedita, impedit, temporibus aperiam iusto cupiditate officiis ea a mollitia magni, sapiente odio fugit. Hic cupiditate suscipit expedita quas velit voluptatibus a consequatur harum qui, aliquid voluptas ratione accusamus blanditiis reprehenderit laboriosam rem. Quod, dolores eligendi autem at soluta doloremque reprehenderit nobis id laboriosam ipsam, distinctio fugit dolore. Consectetur, libero error tenetur numquam sint placeat dolore deserunt recusandae similique nulla repudiandae quaerat porro ratione incidunt maiores inventore ullam fugiat sed ad cupiditate impedit tempora nobis sit facere. Dolor aut officiis distinctio recusandae totam maiores explicabo mollitia facere eius, itaque laboriosam magnam, quisquam repudiandae? Tempora nemo aperiam, vero, magni quos natus. Debitis voluptate obcaecati nobis eos deleniti corporis culpa ipsa odio facilis. Nostrum in reprehenderit veniam, laboriosam perferendis maxime autem commodi dignissimos dolore, ut, nisi assumenda molestias voluptas atque. Labore consectetur reprehenderit magnam, sed, voluptatibus dolorum iusto excepturi obcaecati dicta iure reiciendis ipsum! Praesentium, iste cumque, in vero consequuntur repellat. Facere optio delectus excepturi dolorum atque illo aliquid adipisci suscipit consequatur sint, magni placeat recusandae autem et assumenda quisquam tempora necessitatibus! Nulla optio nesciunt reiciendis repudiandae omnis! Doloremque neque labore animi ab, iure minima totam suscipit iusto dignissimos facere, maxime necessitatibus et eligendi expedita inventore quo exercitationem magni fuga nobis cumque reprehenderit corrupti dolorum. Iste magnam, delectus dolor!
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- Modal 2 -->
+
+			<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h2 class="modal-title" id="exampleModalLabel">Speaker's Name</h2>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem necessitatibus accusamus commodi animi eius quisquam, provident itaque corrupti dolor modi. Modi perspiciatis molestiae tenetur non, nobis nesciunt explicabo harum? Velit eligendi, nisi voluptate, obcaecati accusamus, reiciendis facere, consectetur quam sequi dignissimos in modi aliquid totam debitis doloremque eius delectus. Explicabo ipsam est doloremque, sunt vitae facilis maxime. Tenetur, sequi, voluptatum! Laudantium enim ab nisi sunt, cumque ea numquam quaerat maiores praesentium. Blanditiis quia aspernatur vel veritatis, corporis distinctio quasi recusandae asperiores nam, et quis, obcaecati nostrum consequatur animi rerum? Ex impedit praesentium ipsam iste qui recusandae magnam incidunt, laboriosam iusto. Cupiditate ipsa in qui consequatur? Doloremque dignissimos illo in qui dolorum sint, impedit maxime modi atque! Odio voluptate, aperiam sapiente, ipsam, atque commodi earum fugiat minima ratione, consequatur facilis eos corporis ducimus eius omnis sint excepturi! Labore, reiciendis similique ex! Natus blanditiis accusantium, ad eos laboriosam nobis praesentium eaque sit quaerat odio ullam, ea beatae iure accusamus fugiat dolore dolores deleniti quae aliquam error. Quisquam laudantium voluptate molestiae officiis voluptatibus perferendis deserunt dignissimos ratione veniam excepturi beatae velit quidem dolorem reprehenderit possimus nam cumque ex, quo saepe impedit eligendi, praesentium accusamus tenetur. Tempore expedita, impedit, temporibus aperiam iusto cupiditate officiis ea a mollitia magni, sapiente odio fugit. Hic cupiditate suscipit expedita quas velit voluptatibus a consequatur harum qui, aliquid voluptas ratione accusamus blanditiis reprehenderit laboriosam rem. Quod, dolores eligendi autem at soluta doloremque reprehenderit nobis id laboriosam ipsam, distinctio fugit dolore. Consectetur, libero error tenetur numquam sint placeat dolore deserunt recusandae similique nulla repudiandae quaerat porro ratione incidunt maiores inventore ullam fugiat sed ad cupiditate impedit tempora nobis sit facere. Dolor aut officiis distinctio recusandae totam maiores explicabo mollitia facere eius, itaque laboriosam magnam, quisquam repudiandae? Tempora nemo aperiam, vero, magni quos natus. Debitis voluptate obcaecati nobis eos deleniti corporis culpa ipsa odio facilis. Nostrum in reprehenderit veniam, laboriosam perferendis maxime autem commodi dignissimos dolore, ut, nisi assumenda molestias voluptas atque. Labore consectetur reprehenderit magnam, sed, voluptatibus dolorum iusto excepturi obcaecati dicta iure reiciendis ipsum! Praesentium, iste cumque, in vero consequuntur repellat. Facere optio delectus excepturi dolorum atque illo aliquid adipisci suscipit consequatur sint, magni placeat recusandae autem et assumenda quisquam tempora necessitatibus! Nulla optio nesciunt reiciendis repudiandae omnis! Doloremque neque labore animi ab, iure minima totam suscipit iusto dignissimos facere, maxime necessitatibus et eligendi expedita inventore quo exercitationem magni fuga nobis cumque reprehenderit corrupti dolorum. Iste magnam, delectus dolor!
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- Modal 3 -->
+
+			<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h2 class="modal-title" id="exampleModalLabel">Speaker's Name</h2>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem necessitatibus accusamus commodi animi eius quisquam, provident itaque corrupti dolor modi. Modi perspiciatis molestiae tenetur non, nobis nesciunt explicabo harum? Velit eligendi, nisi voluptate, obcaecati accusamus, reiciendis facere, consectetur quam sequi dignissimos in modi aliquid totam debitis doloremque eius delectus. Explicabo ipsam est doloremque, sunt vitae facilis maxime. Tenetur, sequi, voluptatum! Laudantium enim ab nisi sunt, cumque ea numquam quaerat maiores praesentium. Blanditiis quia aspernatur vel veritatis, corporis distinctio quasi recusandae asperiores nam, et quis, obcaecati nostrum consequatur animi rerum? Ex impedit praesentium ipsam iste qui recusandae magnam incidunt, laboriosam iusto. Cupiditate ipsa in qui consequatur? Doloremque dignissimos illo in qui dolorum sint, impedit maxime modi atque! Odio voluptate, aperiam sapiente, ipsam, atque commodi earum fugiat minima ratione, consequatur facilis eos corporis ducimus eius omnis sint excepturi! Labore, reiciendis similique ex! Natus blanditiis accusantium, ad eos laboriosam nobis praesentium eaque sit quaerat odio ullam, ea beatae iure accusamus fugiat dolore dolores deleniti quae aliquam error. Quisquam laudantium voluptate molestiae officiis voluptatibus perferendis deserunt dignissimos ratione veniam excepturi beatae velit quidem dolorem reprehenderit possimus nam cumque ex, quo saepe impedit eligendi, praesentium accusamus tenetur. Tempore expedita, impedit, temporibus aperiam iusto cupiditate officiis ea a mollitia magni, sapiente odio fugit. Hic cupiditate suscipit expedita quas velit voluptatibus a consequatur harum qui, aliquid voluptas ratione accusamus blanditiis reprehenderit laboriosam rem. Quod, dolores eligendi autem at soluta doloremque reprehenderit nobis id laboriosam ipsam, distinctio fugit dolore. Consectetur, libero error tenetur numquam sint placeat dolore deserunt recusandae similique nulla repudiandae quaerat porro ratione incidunt maiores inventore ullam fugiat sed ad cupiditate impedit tempora nobis sit facere. Dolor aut officiis distinctio recusandae totam maiores explicabo mollitia facere eius, itaque laboriosam magnam, quisquam repudiandae? Tempora nemo aperiam, vero, magni quos natus. Debitis voluptate obcaecati nobis eos deleniti corporis culpa ipsa odio facilis. Nostrum in reprehenderit veniam, laboriosam perferendis maxime autem commodi dignissimos dolore, ut, nisi assumenda molestias voluptas atque. Labore consectetur reprehenderit magnam, sed, voluptatibus dolorum iusto excepturi obcaecati dicta iure reiciendis ipsum! Praesentium, iste cumque, in vero consequuntur repellat. Facere optio delectus excepturi dolorum atque illo aliquid adipisci suscipit consequatur sint, magni placeat recusandae autem et assumenda quisquam tempora necessitatibus! Nulla optio nesciunt reiciendis repudiandae omnis! Doloremque neque labore animi ab, iure minima totam suscipit iusto dignissimos facere, maxime necessitatibus et eligendi expedita inventore quo exercitationem magni fuga nobis cumque reprehenderit corrupti dolorum. Iste magnam, delectus dolor!
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- Modal 4 -->
+
+			<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h2 class="modal-title" id="exampleModalLabel">Speaker's Name</h2>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem necessitatibus accusamus commodi animi eius quisquam, provident itaque corrupti dolor modi. Modi perspiciatis molestiae tenetur non, nobis nesciunt explicabo harum? Velit eligendi, nisi voluptate, obcaecati accusamus, reiciendis facere, consectetur quam sequi dignissimos in modi aliquid totam debitis doloremque eius delectus. Explicabo ipsam est doloremque, sunt vitae facilis maxime. Tenetur, sequi, voluptatum! Laudantium enim ab nisi sunt, cumque ea numquam quaerat maiores praesentium. Blanditiis quia aspernatur vel veritatis, corporis distinctio quasi recusandae asperiores nam, et quis, obcaecati nostrum consequatur animi rerum? Ex impedit praesentium ipsam iste qui recusandae magnam incidunt, laboriosam iusto. Cupiditate ipsa in qui consequatur? Doloremque dignissimos illo in qui dolorum sint, impedit maxime modi atque! Odio voluptate, aperiam sapiente, ipsam, atque commodi earum fugiat minima ratione, consequatur facilis eos corporis ducimus eius omnis sint excepturi! Labore, reiciendis similique ex! Natus blanditiis accusantium, ad eos laboriosam nobis praesentium eaque sit quaerat odio ullam, ea beatae iure accusamus fugiat dolore dolores deleniti quae aliquam error. Quisquam laudantium voluptate molestiae officiis voluptatibus perferendis deserunt dignissimos ratione veniam excepturi beatae velit quidem dolorem reprehenderit possimus nam cumque ex, quo saepe impedit eligendi, praesentium accusamus tenetur. Tempore expedita, impedit, temporibus aperiam iusto cupiditate officiis ea a mollitia magni, sapiente odio fugit. Hic cupiditate suscipit expedita quas velit voluptatibus a consequatur harum qui, aliquid voluptas ratione accusamus blanditiis reprehenderit laboriosam rem. Quod, dolores eligendi autem at soluta doloremque reprehenderit nobis id laboriosam ipsam, distinctio fugit dolore. Consectetur, libero error tenetur numquam sint placeat dolore deserunt recusandae similique nulla repudiandae quaerat porro ratione incidunt maiores inventore ullam fugiat sed ad cupiditate impedit tempora nobis sit facere. Dolor aut officiis distinctio recusandae totam maiores explicabo mollitia facere eius, itaque laboriosam magnam, quisquam repudiandae? Tempora nemo aperiam, vero, magni quos natus. Debitis voluptate obcaecati nobis eos deleniti corporis culpa ipsa odio facilis. Nostrum in reprehenderit veniam, laboriosam perferendis maxime autem commodi dignissimos dolore, ut, nisi assumenda molestias voluptas atque. Labore consectetur reprehenderit magnam, sed, voluptatibus dolorum iusto excepturi obcaecati dicta iure reiciendis ipsum! Praesentium, iste cumque, in vero consequuntur repellat. Facere optio delectus excepturi dolorum atque illo aliquid adipisci suscipit consequatur sint, magni placeat recusandae autem et assumenda quisquam tempora necessitatibus! Nulla optio nesciunt reiciendis repudiandae omnis! Doloremque neque labore animi ab, iure minima totam suscipit iusto dignissimos facere, maxime necessitatibus et eligendi expedita inventore quo exercitationem magni fuga nobis cumque reprehenderit corrupti dolorum. Iste magnam, delectus dolor!
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- Modal 5 -->
+
+			<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h2 class="modal-title" id="exampleModalLabel">Speaker's Name</h2>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem necessitatibus accusamus commodi animi eius quisquam, provident itaque corrupti dolor modi. Modi perspiciatis molestiae tenetur non, nobis nesciunt explicabo harum? Velit eligendi, nisi voluptate, obcaecati accusamus, reiciendis facere, consectetur quam sequi dignissimos in modi aliquid totam debitis doloremque eius delectus. Explicabo ipsam est doloremque, sunt vitae facilis maxime. Tenetur, sequi, voluptatum! Laudantium enim ab nisi sunt, cumque ea numquam quaerat maiores praesentium. Blanditiis quia aspernatur vel veritatis, corporis distinctio quasi recusandae asperiores nam, et quis, obcaecati nostrum consequatur animi rerum? Ex impedit praesentium ipsam iste qui recusandae magnam incidunt, laboriosam iusto. Cupiditate ipsa in qui consequatur? Doloremque dignissimos illo in qui dolorum sint, impedit maxime modi atque! Odio voluptate, aperiam sapiente, ipsam, atque commodi earum fugiat minima ratione, consequatur facilis eos corporis ducimus eius omnis sint excepturi! Labore, reiciendis similique ex! Natus blanditiis accusantium, ad eos laboriosam nobis praesentium eaque sit quaerat odio ullam, ea beatae iure accusamus fugiat dolore dolores deleniti quae aliquam error. Quisquam laudantium voluptate molestiae officiis voluptatibus perferendis deserunt dignissimos ratione veniam excepturi beatae velit quidem dolorem reprehenderit possimus nam cumque ex, quo saepe impedit eligendi, praesentium accusamus tenetur. Tempore expedita, impedit, temporibus aperiam iusto cupiditate officiis ea a mollitia magni, sapiente odio fugit. Hic cupiditate suscipit expedita quas velit voluptatibus a consequatur harum qui, aliquid voluptas ratione accusamus blanditiis reprehenderit laboriosam rem. Quod, dolores eligendi autem at soluta doloremque reprehenderit nobis id laboriosam ipsam, distinctio fugit dolore. Consectetur, libero error tenetur numquam sint placeat dolore deserunt recusandae similique nulla repudiandae quaerat porro ratione incidunt maiores inventore ullam fugiat sed ad cupiditate impedit tempora nobis sit facere. Dolor aut officiis distinctio recusandae totam maiores explicabo mollitia facere eius, itaque laboriosam magnam, quisquam repudiandae? Tempora nemo aperiam, vero, magni quos natus. Debitis voluptate obcaecati nobis eos deleniti corporis culpa ipsa odio facilis. Nostrum in reprehenderit veniam, laboriosam perferendis maxime autem commodi dignissimos dolore, ut, nisi assumenda molestias voluptas atque. Labore consectetur reprehenderit magnam, sed, voluptatibus dolorum iusto excepturi obcaecati dicta iure reiciendis ipsum! Praesentium, iste cumque, in vero consequuntur repellat. Facere optio delectus excepturi dolorum atque illo aliquid adipisci suscipit consequatur sint, magni placeat recusandae autem et assumenda quisquam tempora necessitatibus! Nulla optio nesciunt reiciendis repudiandae omnis! Doloremque neque labore animi ab, iure minima totam suscipit iusto dignissimos facere, maxime necessitatibus et eligendi expedita inventore quo exercitationem magni fuga nobis cumque reprehenderit corrupti dolorum. Iste magnam, delectus dolor!
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- Modal 6 -->
+
+			<div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h2 class="modal-title" id="exampleModalLabel">Speaker's Name</h2>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem necessitatibus accusamus commodi animi eius quisquam, provident itaque corrupti dolor modi. Modi perspiciatis molestiae tenetur non, nobis nesciunt explicabo harum? Velit eligendi, nisi voluptate, obcaecati accusamus, reiciendis facere, consectetur quam sequi dignissimos in modi aliquid totam debitis doloremque eius delectus. Explicabo ipsam est doloremque, sunt vitae facilis maxime. Tenetur, sequi, voluptatum! Laudantium enim ab nisi sunt, cumque ea numquam quaerat maiores praesentium. Blanditiis quia aspernatur vel veritatis, corporis distinctio quasi recusandae asperiores nam, et quis, obcaecati nostrum consequatur animi rerum? Ex impedit praesentium ipsam iste qui recusandae magnam incidunt, laboriosam iusto. Cupiditate ipsa in qui consequatur? Doloremque dignissimos illo in qui dolorum sint, impedit maxime modi atque! Odio voluptate, aperiam sapiente, ipsam, atque commodi earum fugiat minima ratione, consequatur facilis eos corporis ducimus eius omnis sint excepturi! Labore, reiciendis similique ex! Natus blanditiis accusantium, ad eos laboriosam nobis praesentium eaque sit quaerat odio ullam, ea beatae iure accusamus fugiat dolore dolores deleniti quae aliquam error. Quisquam laudantium voluptate molestiae officiis voluptatibus perferendis deserunt dignissimos ratione veniam excepturi beatae velit quidem dolorem reprehenderit possimus nam cumque ex, quo saepe impedit eligendi, praesentium accusamus tenetur. Tempore expedita, impedit, temporibus aperiam iusto cupiditate officiis ea a mollitia magni, sapiente odio fugit. Hic cupiditate suscipit expedita quas velit voluptatibus a consequatur harum qui, aliquid voluptas ratione accusamus blanditiis reprehenderit laboriosam rem. Quod, dolores eligendi autem at soluta doloremque reprehenderit nobis id laboriosam ipsam, distinctio fugit dolore. Consectetur, libero error tenetur numquam sint placeat dolore deserunt recusandae similique nulla repudiandae quaerat porro ratione incidunt maiores inventore ullam fugiat sed ad cupiditate impedit tempora nobis sit facere. Dolor aut officiis distinctio recusandae totam maiores explicabo mollitia facere eius, itaque laboriosam magnam, quisquam repudiandae? Tempora nemo aperiam, vero, magni quos natus. Debitis voluptate obcaecati nobis eos deleniti corporis culpa ipsa odio facilis. Nostrum in reprehenderit veniam, laboriosam perferendis maxime autem commodi dignissimos dolore, ut, nisi assumenda molestias voluptas atque. Labore consectetur reprehenderit magnam, sed, voluptatibus dolorum iusto excepturi obcaecati dicta iure reiciendis ipsum! Praesentium, iste cumque, in vero consequuntur repellat. Facere optio delectus excepturi dolorum atque illo aliquid adipisci suscipit consequatur sint, magni placeat recusandae autem et assumenda quisquam tempora necessitatibus! Nulla optio nesciunt reiciendis repudiandae omnis! Doloremque neque labore animi ab, iure minima totam suscipit iusto dignissimos facere, maxime necessitatibus et eligendi expedita inventore quo exercitationem magni fuga nobis cumque reprehenderit corrupti dolorum. Iste magnam, delectus dolor!
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- Modal 7 -->
+
+			<div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h2 class="modal-title" id="exampleModalLabel">Speaker's Name</h2>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem necessitatibus accusamus commodi animi eius quisquam, provident itaque corrupti dolor modi. Modi perspiciatis molestiae tenetur non, nobis nesciunt explicabo harum? Velit eligendi, nisi voluptate, obcaecati accusamus, reiciendis facere, consectetur quam sequi dignissimos in modi aliquid totam debitis doloremque eius delectus. Explicabo ipsam est doloremque, sunt vitae facilis maxime. Tenetur, sequi, voluptatum! Laudantium enim ab nisi sunt, cumque ea numquam quaerat maiores praesentium. Blanditiis quia aspernatur vel veritatis, corporis distinctio quasi recusandae asperiores nam, et quis, obcaecati nostrum consequatur animi rerum? Ex impedit praesentium ipsam iste qui recusandae magnam incidunt, laboriosam iusto. Cupiditate ipsa in qui consequatur? Doloremque dignissimos illo in qui dolorum sint, impedit maxime modi atque! Odio voluptate, aperiam sapiente, ipsam, atque commodi earum fugiat minima ratione, consequatur facilis eos corporis ducimus eius omnis sint excepturi! Labore, reiciendis similique ex! Natus blanditiis accusantium, ad eos laboriosam nobis praesentium eaque sit quaerat odio ullam, ea beatae iure accusamus fugiat dolore dolores deleniti quae aliquam error. Quisquam laudantium voluptate molestiae officiis voluptatibus perferendis deserunt dignissimos ratione veniam excepturi beatae velit quidem dolorem reprehenderit possimus nam cumque ex, quo saepe impedit eligendi, praesentium accusamus tenetur. Tempore expedita, impedit, temporibus aperiam iusto cupiditate officiis ea a mollitia magni, sapiente odio fugit. Hic cupiditate suscipit expedita quas velit voluptatibus a consequatur harum qui, aliquid voluptas ratione accusamus blanditiis reprehenderit laboriosam rem. Quod, dolores eligendi autem at soluta doloremque reprehenderit nobis id laboriosam ipsam, distinctio fugit dolore. Consectetur, libero error tenetur numquam sint placeat dolore deserunt recusandae similique nulla repudiandae quaerat porro ratione incidunt maiores inventore ullam fugiat sed ad cupiditate impedit tempora nobis sit facere. Dolor aut officiis distinctio recusandae totam maiores explicabo mollitia facere eius, itaque laboriosam magnam, quisquam repudiandae? Tempora nemo aperiam, vero, magni quos natus. Debitis voluptate obcaecati nobis eos deleniti corporis culpa ipsa odio facilis. Nostrum in reprehenderit veniam, laboriosam perferendis maxime autem commodi dignissimos dolore, ut, nisi assumenda molestias voluptas atque. Labore consectetur reprehenderit magnam, sed, voluptatibus dolorum iusto excepturi obcaecati dicta iure reiciendis ipsum! Praesentium, iste cumque, in vero consequuntur repellat. Facere optio delectus excepturi dolorum atque illo aliquid adipisci suscipit consequatur sint, magni placeat recusandae autem et assumenda quisquam tempora necessitatibus! Nulla optio nesciunt reiciendis repudiandae omnis! Doloremque neque labore animi ab, iure minima totam suscipit iusto dignissimos facere, maxime necessitatibus et eligendi expedita inventore quo exercitationem magni fuga nobis cumque reprehenderit corrupti dolorum. Iste magnam, delectus dolor!
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- Modal 8 -->
+
+			<div class="modal fade" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h2 class="modal-title" id="exampleModalLabel">Speaker's Name</h2>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem necessitatibus accusamus commodi animi eius quisquam, provident itaque corrupti dolor modi. Modi perspiciatis molestiae tenetur non, nobis nesciunt explicabo harum? Velit eligendi, nisi voluptate, obcaecati accusamus, reiciendis facere, consectetur quam sequi dignissimos in modi aliquid totam debitis doloremque eius delectus. Explicabo ipsam est doloremque, sunt vitae facilis maxime. Tenetur, sequi, voluptatum! Laudantium enim ab nisi sunt, cumque ea numquam quaerat maiores praesentium. Blanditiis quia aspernatur vel veritatis, corporis distinctio quasi recusandae asperiores nam, et quis, obcaecati nostrum consequatur animi rerum? Ex impedit praesentium ipsam iste qui recusandae magnam incidunt, laboriosam iusto. Cupiditate ipsa in qui consequatur? Doloremque dignissimos illo in qui dolorum sint, impedit maxime modi atque! Odio voluptate, aperiam sapiente, ipsam, atque commodi earum fugiat minima ratione, consequatur facilis eos corporis ducimus eius omnis sint excepturi! Labore, reiciendis similique ex! Natus blanditiis accusantium, ad eos laboriosam nobis praesentium eaque sit quaerat odio ullam, ea beatae iure accusamus fugiat dolore dolores deleniti quae aliquam error. Quisquam laudantium voluptate molestiae officiis voluptatibus perferendis deserunt dignissimos ratione veniam excepturi beatae velit quidem dolorem reprehenderit possimus nam cumque ex, quo saepe impedit eligendi, praesentium accusamus tenetur. Tempore expedita, impedit, temporibus aperiam iusto cupiditate officiis ea a mollitia magni, sapiente odio fugit. Hic cupiditate suscipit expedita quas velit voluptatibus a consequatur harum qui, aliquid voluptas ratione accusamus blanditiis reprehenderit laboriosam rem. Quod, dolores eligendi autem at soluta doloremque reprehenderit nobis id laboriosam ipsam, distinctio fugit dolore. Consectetur, libero error tenetur numquam sint placeat dolore deserunt recusandae similique nulla repudiandae quaerat porro ratione incidunt maiores inventore ullam fugiat sed ad cupiditate impedit tempora nobis sit facere. Dolor aut officiis distinctio recusandae totam maiores explicabo mollitia facere eius, itaque laboriosam magnam, quisquam repudiandae? Tempora nemo aperiam, vero, magni quos natus. Debitis voluptate obcaecati nobis eos deleniti corporis culpa ipsa odio facilis. Nostrum in reprehenderit veniam, laboriosam perferendis maxime autem commodi dignissimos dolore, ut, nisi assumenda molestias voluptas atque. Labore consectetur reprehenderit magnam, sed, voluptatibus dolorum iusto excepturi obcaecati dicta iure reiciendis ipsum! Praesentium, iste cumque, in vero consequuntur repellat. Facere optio delectus excepturi dolorum atque illo aliquid adipisci suscipit consequatur sint, magni placeat recusandae autem et assumenda quisquam tempora necessitatibus! Nulla optio nesciunt reiciendis repudiandae omnis! Doloremque neque labore animi ab, iure minima totam suscipit iusto dignissimos facere, maxime necessitatibus et eligendi expedita inventore quo exercitationem magni fuga nobis cumque reprehenderit corrupti dolorum. Iste magnam, delectus dolor!
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- Modal 9 -->
+
+			<div class="modal fade" id="myModal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h2 class="modal-title" id="exampleModalLabel">Speaker's Name</h2>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem necessitatibus accusamus commodi animi eius quisquam, provident itaque corrupti dolor modi. Modi perspiciatis molestiae tenetur non, nobis nesciunt explicabo harum? Velit eligendi, nisi voluptate, obcaecati accusamus, reiciendis facere, consectetur quam sequi dignissimos in modi aliquid totam debitis doloremque eius delectus. Explicabo ipsam est doloremque, sunt vitae facilis maxime. Tenetur, sequi, voluptatum! Laudantium enim ab nisi sunt, cumque ea numquam quaerat maiores praesentium. Blanditiis quia aspernatur vel veritatis, corporis distinctio quasi recusandae asperiores nam, et quis, obcaecati nostrum consequatur animi rerum? Ex impedit praesentium ipsam iste qui recusandae magnam incidunt, laboriosam iusto. Cupiditate ipsa in qui consequatur? Doloremque dignissimos illo in qui dolorum sint, impedit maxime modi atque! Odio voluptate, aperiam sapiente, ipsam, atque commodi earum fugiat minima ratione, consequatur facilis eos corporis ducimus eius omnis sint excepturi! Labore, reiciendis similique ex! Natus blanditiis accusantium, ad eos laboriosam nobis praesentium eaque sit quaerat odio ullam, ea beatae iure accusamus fugiat dolore dolores deleniti quae aliquam error. Quisquam laudantium voluptate molestiae officiis voluptatibus perferendis deserunt dignissimos ratione veniam excepturi beatae velit quidem dolorem reprehenderit possimus nam cumque ex, quo saepe impedit eligendi, praesentium accusamus tenetur. Tempore expedita, impedit, temporibus aperiam iusto cupiditate officiis ea a mollitia magni, sapiente odio fugit. Hic cupiditate suscipit expedita quas velit voluptatibus a consequatur harum qui, aliquid voluptas ratione accusamus blanditiis reprehenderit laboriosam rem. Quod, dolores eligendi autem at soluta doloremque reprehenderit nobis id laboriosam ipsam, distinctio fugit dolore. Consectetur, libero error tenetur numquam sint placeat dolore deserunt recusandae similique nulla repudiandae quaerat porro ratione incidunt maiores inventore ullam fugiat sed ad cupiditate impedit tempora nobis sit facere. Dolor aut officiis distinctio recusandae totam maiores explicabo mollitia facere eius, itaque laboriosam magnam, quisquam repudiandae? Tempora nemo aperiam, vero, magni quos natus. Debitis voluptate obcaecati nobis eos deleniti corporis culpa ipsa odio facilis. Nostrum in reprehenderit veniam, laboriosam perferendis maxime autem commodi dignissimos dolore, ut, nisi assumenda molestias voluptas atque. Labore consectetur reprehenderit magnam, sed, voluptatibus dolorum iusto excepturi obcaecati dicta iure reiciendis ipsum! Praesentium, iste cumque, in vero consequuntur repellat. Facere optio delectus excepturi dolorum atque illo aliquid adipisci suscipit consequatur sint, magni placeat recusandae autem et assumenda quisquam tempora necessitatibus! Nulla optio nesciunt reiciendis repudiandae omnis! Doloremque neque labore animi ab, iure minima totam suscipit iusto dignissimos facere, maxime necessitatibus et eligendi expedita inventore quo exercitationem magni fuga nobis cumque reprehenderit corrupti dolorum. Iste magnam, delectus dolor!
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- Modal 10 -->
+
+			<div class="modal fade" id="myModal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h2 class="modal-title" id="exampleModalLabel">Speaker's Name</h2>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem necessitatibus accusamus commodi animi eius quisquam, provident itaque corrupti dolor modi. Modi perspiciatis molestiae tenetur non, nobis nesciunt explicabo harum? Velit eligendi, nisi voluptate, obcaecati accusamus, reiciendis facere, consectetur quam sequi dignissimos in modi aliquid totam debitis doloremque eius delectus. Explicabo ipsam est doloremque, sunt vitae facilis maxime. Tenetur, sequi, voluptatum! Laudantium enim ab nisi sunt, cumque ea numquam quaerat maiores praesentium. Blanditiis quia aspernatur vel veritatis, corporis distinctio quasi recusandae asperiores nam, et quis, obcaecati nostrum consequatur animi rerum? Ex impedit praesentium ipsam iste qui recusandae magnam incidunt, laboriosam iusto. Cupiditate ipsa in qui consequatur? Doloremque dignissimos illo in qui dolorum sint, impedit maxime modi atque! Odio voluptate, aperiam sapiente, ipsam, atque commodi earum fugiat minima ratione, consequatur facilis eos corporis ducimus eius omnis sint excepturi! Labore, reiciendis similique ex! Natus blanditiis accusantium, ad eos laboriosam nobis praesentium eaque sit quaerat odio ullam, ea beatae iure accusamus fugiat dolore dolores deleniti quae aliquam error. Quisquam laudantium voluptate molestiae officiis voluptatibus perferendis deserunt dignissimos ratione veniam excepturi beatae velit quidem dolorem reprehenderit possimus nam cumque ex, quo saepe impedit eligendi, praesentium accusamus tenetur. Tempore expedita, impedit, temporibus aperiam iusto cupiditate officiis ea a mollitia magni, sapiente odio fugit. Hic cupiditate suscipit expedita quas velit voluptatibus a consequatur harum qui, aliquid voluptas ratione accusamus blanditiis reprehenderit laboriosam rem. Quod, dolores eligendi autem at soluta doloremque reprehenderit nobis id laboriosam ipsam, distinctio fugit dolore. Consectetur, libero error tenetur numquam sint placeat dolore deserunt recusandae similique nulla repudiandae quaerat porro ratione incidunt maiores inventore ullam fugiat sed ad cupiditate impedit tempora nobis sit facere. Dolor aut officiis distinctio recusandae totam maiores explicabo mollitia facere eius, itaque laboriosam magnam, quisquam repudiandae? Tempora nemo aperiam, vero, magni quos natus. Debitis voluptate obcaecati nobis eos deleniti corporis culpa ipsa odio facilis. Nostrum in reprehenderit veniam, laboriosam perferendis maxime autem commodi dignissimos dolore, ut, nisi assumenda molestias voluptas atque. Labore consectetur reprehenderit magnam, sed, voluptatibus dolorum iusto excepturi obcaecati dicta iure reiciendis ipsum! Praesentium, iste cumque, in vero consequuntur repellat. Facere optio delectus excepturi dolorum atque illo aliquid adipisci suscipit consequatur sint, magni placeat recusandae autem et assumenda quisquam tempora necessitatibus! Nulla optio nesciunt reiciendis repudiandae omnis! Doloremque neque labore animi ab, iure minima totam suscipit iusto dignissimos facere, maxime necessitatibus et eligendi expedita inventore quo exercitationem magni fuga nobis cumque reprehenderit corrupti dolorum. Iste magnam, delectus dolor!
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- Modal 11 -->
+
+			<div class="modal fade" id="myModal11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h2 class="modal-title" id="exampleModalLabel">Speaker's Name</h2>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem necessitatibus accusamus commodi animi eius quisquam, provident itaque corrupti dolor modi. Modi perspiciatis molestiae tenetur non, nobis nesciunt explicabo harum? Velit eligendi, nisi voluptate, obcaecati accusamus, reiciendis facere, consectetur quam sequi dignissimos in modi aliquid totam debitis doloremque eius delectus. Explicabo ipsam est doloremque, sunt vitae facilis maxime. Tenetur, sequi, voluptatum! Laudantium enim ab nisi sunt, cumque ea numquam quaerat maiores praesentium. Blanditiis quia aspernatur vel veritatis, corporis distinctio quasi recusandae asperiores nam, et quis, obcaecati nostrum consequatur animi rerum? Ex impedit praesentium ipsam iste qui recusandae magnam incidunt, laboriosam iusto. Cupiditate ipsa in qui consequatur? Doloremque dignissimos illo in qui dolorum sint, impedit maxime modi atque! Odio voluptate, aperiam sapiente, ipsam, atque commodi earum fugiat minima ratione, consequatur facilis eos corporis ducimus eius omnis sint excepturi! Labore, reiciendis similique ex! Natus blanditiis accusantium, ad eos laboriosam nobis praesentium eaque sit quaerat odio ullam, ea beatae iure accusamus fugiat dolore dolores deleniti quae aliquam error. Quisquam laudantium voluptate molestiae officiis voluptatibus perferendis deserunt dignissimos ratione veniam excepturi beatae velit quidem dolorem reprehenderit possimus nam cumque ex, quo saepe impedit eligendi, praesentium accusamus tenetur. Tempore expedita, impedit, temporibus aperiam iusto cupiditate officiis ea a mollitia magni, sapiente odio fugit. Hic cupiditate suscipit expedita quas velit voluptatibus a consequatur harum qui, aliquid voluptas ratione accusamus blanditiis reprehenderit laboriosam rem. Quod, dolores eligendi autem at soluta doloremque reprehenderit nobis id laboriosam ipsam, distinctio fugit dolore. Consectetur, libero error tenetur numquam sint placeat dolore deserunt recusandae similique nulla repudiandae quaerat porro ratione incidunt maiores inventore ullam fugiat sed ad cupiditate impedit tempora nobis sit facere. Dolor aut officiis distinctio recusandae totam maiores explicabo mollitia facere eius, itaque laboriosam magnam, quisquam repudiandae? Tempora nemo aperiam, vero, magni quos natus. Debitis voluptate obcaecati nobis eos deleniti corporis culpa ipsa odio facilis. Nostrum in reprehenderit veniam, laboriosam perferendis maxime autem commodi dignissimos dolore, ut, nisi assumenda molestias voluptas atque. Labore consectetur reprehenderit magnam, sed, voluptatibus dolorum iusto excepturi obcaecati dicta iure reiciendis ipsum! Praesentium, iste cumque, in vero consequuntur repellat. Facere optio delectus excepturi dolorum atque illo aliquid adipisci suscipit consequatur sint, magni placeat recusandae autem et assumenda quisquam tempora necessitatibus! Nulla optio nesciunt reiciendis repudiandae omnis! Doloremque neque labore animi ab, iure minima totam suscipit iusto dignissimos facere, maxime necessitatibus et eligendi expedita inventore quo exercitationem magni fuga nobis cumque reprehenderit corrupti dolorum. Iste magnam, delectus dolor!
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- Modal 12 -->
+
+			<div class="modal fade" id="myModal12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h2 class="modal-title" id="exampleModalLabel">Speaker's Name</h2>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem necessitatibus accusamus commodi animi eius quisquam, provident itaque corrupti dolor modi. Modi perspiciatis molestiae tenetur non, nobis nesciunt explicabo harum? Velit eligendi, nisi voluptate, obcaecati accusamus, reiciendis facere, consectetur quam sequi dignissimos in modi aliquid totam debitis doloremque eius delectus. Explicabo ipsam est doloremque, sunt vitae facilis maxime. Tenetur, sequi, voluptatum! Laudantium enim ab nisi sunt, cumque ea numquam quaerat maiores praesentium. Blanditiis quia aspernatur vel veritatis, corporis distinctio quasi recusandae asperiores nam, et quis, obcaecati nostrum consequatur animi rerum? Ex impedit praesentium ipsam iste qui recusandae magnam incidunt, laboriosam iusto. Cupiditate ipsa in qui consequatur? Doloremque dignissimos illo in qui dolorum sint, impedit maxime modi atque! Odio voluptate, aperiam sapiente, ipsam, atque commodi earum fugiat minima ratione, consequatur facilis eos corporis ducimus eius omnis sint excepturi! Labore, reiciendis similique ex! Natus blanditiis accusantium, ad eos laboriosam nobis praesentium eaque sit quaerat odio ullam, ea beatae iure accusamus fugiat dolore dolores deleniti quae aliquam error. Quisquam laudantium voluptate molestiae officiis voluptatibus perferendis deserunt dignissimos ratione veniam excepturi beatae velit quidem dolorem reprehenderit possimus nam cumque ex, quo saepe impedit eligendi, praesentium accusamus tenetur. Tempore expedita, impedit, temporibus aperiam iusto cupiditate officiis ea a mollitia magni, sapiente odio fugit. Hic cupiditate suscipit expedita quas velit voluptatibus a consequatur harum qui, aliquid voluptas ratione accusamus blanditiis reprehenderit laboriosam rem. Quod, dolores eligendi autem at soluta doloremque reprehenderit nobis id laboriosam ipsam, distinctio fugit dolore. Consectetur, libero error tenetur numquam sint placeat dolore deserunt recusandae similique nulla repudiandae quaerat porro ratione incidunt maiores inventore ullam fugiat sed ad cupiditate impedit tempora nobis sit facere. Dolor aut officiis distinctio recusandae totam maiores explicabo mollitia facere eius, itaque laboriosam magnam, quisquam repudiandae? Tempora nemo aperiam, vero, magni quos natus. Debitis voluptate obcaecati nobis eos deleniti corporis culpa ipsa odio facilis. Nostrum in reprehenderit veniam, laboriosam perferendis maxime autem commodi dignissimos dolore, ut, nisi assumenda molestias voluptas atque. Labore consectetur reprehenderit magnam, sed, voluptatibus dolorum iusto excepturi obcaecati dicta iure reiciendis ipsum! Praesentium, iste cumque, in vero consequuntur repellat. Facere optio delectus excepturi dolorum atque illo aliquid adipisci suscipit consequatur sint, magni placeat recusandae autem et assumenda quisquam tempora necessitatibus! Nulla optio nesciunt reiciendis repudiandae omnis! Doloremque neque labore animi ab, iure minima totam suscipit iusto dignissimos facere, maxime necessitatibus et eligendi expedita inventore quo exercitationem magni fuga nobis cumque reprehenderit corrupti dolorum. Iste magnam, delectus dolor!
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- Modal 13 -->
+
+			<div class="modal fade" id="myModal13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h2 class="modal-title" id="exampleModalLabel">Speaker's Name</h2>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem necessitatibus accusamus commodi animi eius quisquam, provident itaque corrupti dolor modi. Modi perspiciatis molestiae tenetur non, nobis nesciunt explicabo harum? Velit eligendi, nisi voluptate, obcaecati accusamus, reiciendis facere, consectetur quam sequi dignissimos in modi aliquid totam debitis doloremque eius delectus. Explicabo ipsam est doloremque, sunt vitae facilis maxime. Tenetur, sequi, voluptatum! Laudantium enim ab nisi sunt, cumque ea numquam quaerat maiores praesentium. Blanditiis quia aspernatur vel veritatis, corporis distinctio quasi recusandae asperiores nam, et quis, obcaecati nostrum consequatur animi rerum? Ex impedit praesentium ipsam iste qui recusandae magnam incidunt, laboriosam iusto. Cupiditate ipsa in qui consequatur? Doloremque dignissimos illo in qui dolorum sint, impedit maxime modi atque! Odio voluptate, aperiam sapiente, ipsam, atque commodi earum fugiat minima ratione, consequatur facilis eos corporis ducimus eius omnis sint excepturi! Labore, reiciendis similique ex! Natus blanditiis accusantium, ad eos laboriosam nobis praesentium eaque sit quaerat odio ullam, ea beatae iure accusamus fugiat dolore dolores deleniti quae aliquam error. Quisquam laudantium voluptate molestiae officiis voluptatibus perferendis deserunt dignissimos ratione veniam excepturi beatae velit quidem dolorem reprehenderit possimus nam cumque ex, quo saepe impedit eligendi, praesentium accusamus tenetur. Tempore expedita, impedit, temporibus aperiam iusto cupiditate officiis ea a mollitia magni, sapiente odio fugit. Hic cupiditate suscipit expedita quas velit voluptatibus a consequatur harum qui, aliquid voluptas ratione accusamus blanditiis reprehenderit laboriosam rem. Quod, dolores eligendi autem at soluta doloremque reprehenderit nobis id laboriosam ipsam, distinctio fugit dolore. Consectetur, libero error tenetur numquam sint placeat dolore deserunt recusandae similique nulla repudiandae quaerat porro ratione incidunt maiores inventore ullam fugiat sed ad cupiditate impedit tempora nobis sit facere. Dolor aut officiis distinctio recusandae totam maiores explicabo mollitia facere eius, itaque laboriosam magnam, quisquam repudiandae? Tempora nemo aperiam, vero, magni quos natus. Debitis voluptate obcaecati nobis eos deleniti corporis culpa ipsa odio facilis. Nostrum in reprehenderit veniam, laboriosam perferendis maxime autem commodi dignissimos dolore, ut, nisi assumenda molestias voluptas atque. Labore consectetur reprehenderit magnam, sed, voluptatibus dolorum iusto excepturi obcaecati dicta iure reiciendis ipsum! Praesentium, iste cumque, in vero consequuntur repellat. Facere optio delectus excepturi dolorum atque illo aliquid adipisci suscipit consequatur sint, magni placeat recusandae autem et assumenda quisquam tempora necessitatibus! Nulla optio nesciunt reiciendis repudiandae omnis! Doloremque neque labore animi ab, iure minima totam suscipit iusto dignissimos facere, maxime necessitatibus et eligendi expedita inventore quo exercitationem magni fuga nobis cumque reprehenderit corrupti dolorum. Iste magnam, delectus dolor!
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- Modal 14 -->
+
+			<div class="modal fade" id="myModal14" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h2 class="modal-title" id="exampleModalLabel">Speaker's Name</h2>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem necessitatibus accusamus commodi animi eius quisquam, provident itaque corrupti dolor modi. Modi perspiciatis molestiae tenetur non, nobis nesciunt explicabo harum? Velit eligendi, nisi voluptate, obcaecati accusamus, reiciendis facere, consectetur quam sequi dignissimos in modi aliquid totam debitis doloremque eius delectus. Explicabo ipsam est doloremque, sunt vitae facilis maxime. Tenetur, sequi, voluptatum! Laudantium enim ab nisi sunt, cumque ea numquam quaerat maiores praesentium. Blanditiis quia aspernatur vel veritatis, corporis distinctio quasi recusandae asperiores nam, et quis, obcaecati nostrum consequatur animi rerum? Ex impedit praesentium ipsam iste qui recusandae magnam incidunt, laboriosam iusto. Cupiditate ipsa in qui consequatur? Doloremque dignissimos illo in qui dolorum sint, impedit maxime modi atque! Odio voluptate, aperiam sapiente, ipsam, atque commodi earum fugiat minima ratione, consequatur facilis eos corporis ducimus eius omnis sint excepturi! Labore, reiciendis similique ex! Natus blanditiis accusantium, ad eos laboriosam nobis praesentium eaque sit quaerat odio ullam, ea beatae iure accusamus fugiat dolore dolores deleniti quae aliquam error. Quisquam laudantium voluptate molestiae officiis voluptatibus perferendis deserunt dignissimos ratione veniam excepturi beatae velit quidem dolorem reprehenderit possimus nam cumque ex, quo saepe impedit eligendi, praesentium accusamus tenetur. Tempore expedita, impedit, temporibus aperiam iusto cupiditate officiis ea a mollitia magni, sapiente odio fugit. Hic cupiditate suscipit expedita quas velit voluptatibus a consequatur harum qui, aliquid voluptas ratione accusamus blanditiis reprehenderit laboriosam rem. Quod, dolores eligendi autem at soluta doloremque reprehenderit nobis id laboriosam ipsam, distinctio fugit dolore. Consectetur, libero error tenetur numquam sint placeat dolore deserunt recusandae similique nulla repudiandae quaerat porro ratione incidunt maiores inventore ullam fugiat sed ad cupiditate impedit tempora nobis sit facere. Dolor aut officiis distinctio recusandae totam maiores explicabo mollitia facere eius, itaque laboriosam magnam, quisquam repudiandae? Tempora nemo aperiam, vero, magni quos natus. Debitis voluptate obcaecati nobis eos deleniti corporis culpa ipsa odio facilis. Nostrum in reprehenderit veniam, laboriosam perferendis maxime autem commodi dignissimos dolore, ut, nisi assumenda molestias voluptas atque. Labore consectetur reprehenderit magnam, sed, voluptatibus dolorum iusto excepturi obcaecati dicta iure reiciendis ipsum! Praesentium, iste cumque, in vero consequuntur repellat. Facere optio delectus excepturi dolorum atque illo aliquid adipisci suscipit consequatur sint, magni placeat recusandae autem et assumenda quisquam tempora necessitatibus! Nulla optio nesciunt reiciendis repudiandae omnis! Doloremque neque labore animi ab, iure minima totam suscipit iusto dignissimos facere, maxime necessitatibus et eligendi expedita inventore quo exercitationem magni fuga nobis cumque reprehenderit corrupti dolorum. Iste magnam, delectus dolor!
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- Modal 15 -->
+
+			<div class="modal fade" id="myModal15" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h2 class="modal-title" id="exampleModalLabel">Speaker's Name</h2>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem necessitatibus accusamus commodi animi eius quisquam, provident itaque corrupti dolor modi. Modi perspiciatis molestiae tenetur non, nobis nesciunt explicabo harum? Velit eligendi, nisi voluptate, obcaecati accusamus, reiciendis facere, consectetur quam sequi dignissimos in modi aliquid totam debitis doloremque eius delectus. Explicabo ipsam est doloremque, sunt vitae facilis maxime. Tenetur, sequi, voluptatum! Laudantium enim ab nisi sunt, cumque ea numquam quaerat maiores praesentium. Blanditiis quia aspernatur vel veritatis, corporis distinctio quasi recusandae asperiores nam, et quis, obcaecati nostrum consequatur animi rerum? Ex impedit praesentium ipsam iste qui recusandae magnam incidunt, laboriosam iusto. Cupiditate ipsa in qui consequatur? Doloremque dignissimos illo in qui dolorum sint, impedit maxime modi atque! Odio voluptate, aperiam sapiente, ipsam, atque commodi earum fugiat minima ratione, consequatur facilis eos corporis ducimus eius omnis sint excepturi! Labore, reiciendis similique ex! Natus blanditiis accusantium, ad eos laboriosam nobis praesentium eaque sit quaerat odio ullam, ea beatae iure accusamus fugiat dolore dolores deleniti quae aliquam error. Quisquam laudantium voluptate molestiae officiis voluptatibus perferendis deserunt dignissimos ratione veniam excepturi beatae velit quidem dolorem reprehenderit possimus nam cumque ex, quo saepe impedit eligendi, praesentium accusamus tenetur. Tempore expedita, impedit, temporibus aperiam iusto cupiditate officiis ea a mollitia magni, sapiente odio fugit. Hic cupiditate suscipit expedita quas velit voluptatibus a consequatur harum qui, aliquid voluptas ratione accusamus blanditiis reprehenderit laboriosam rem. Quod, dolores eligendi autem at soluta doloremque reprehenderit nobis id laboriosam ipsam, distinctio fugit dolore. Consectetur, libero error tenetur numquam sint placeat dolore deserunt recusandae similique nulla repudiandae quaerat porro ratione incidunt maiores inventore ullam fugiat sed ad cupiditate impedit tempora nobis sit facere. Dolor aut officiis distinctio recusandae totam maiores explicabo mollitia facere eius, itaque laboriosam magnam, quisquam repudiandae? Tempora nemo aperiam, vero, magni quos natus. Debitis voluptate obcaecati nobis eos deleniti corporis culpa ipsa odio facilis. Nostrum in reprehenderit veniam, laboriosam perferendis maxime autem commodi dignissimos dolore, ut, nisi assumenda molestias voluptas atque. Labore consectetur reprehenderit magnam, sed, voluptatibus dolorum iusto excepturi obcaecati dicta iure reiciendis ipsum! Praesentium, iste cumque, in vero consequuntur repellat. Facere optio delectus excepturi dolorum atque illo aliquid adipisci suscipit consequatur sint, magni placeat recusandae autem et assumenda quisquam tempora necessitatibus! Nulla optio nesciunt reiciendis repudiandae omnis! Doloremque neque labore animi ab, iure minima totam suscipit iusto dignissimos facere, maxime necessitatibus et eligendi expedita inventore quo exercitationem magni fuga nobis cumque reprehenderit corrupti dolorum. Iste magnam, delectus dolor!
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- Modal 16 -->
+
+			<div class="modal fade" id="myModal16" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h2 class="modal-title" id="exampleModalLabel">Speaker's Name</h2>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem necessitatibus accusamus commodi animi eius quisquam, provident itaque corrupti dolor modi. Modi perspiciatis molestiae tenetur non, nobis nesciunt explicabo harum? Velit eligendi, nisi voluptate, obcaecati accusamus, reiciendis facere, consectetur quam sequi dignissimos in modi aliquid totam debitis doloremque eius delectus. Explicabo ipsam est doloremque, sunt vitae facilis maxime. Tenetur, sequi, voluptatum! Laudantium enim ab nisi sunt, cumque ea numquam quaerat maiores praesentium. Blanditiis quia aspernatur vel veritatis, corporis distinctio quasi recusandae asperiores nam, et quis, obcaecati nostrum consequatur animi rerum? Ex impedit praesentium ipsam iste qui recusandae magnam incidunt, laboriosam iusto. Cupiditate ipsa in qui consequatur? Doloremque dignissimos illo in qui dolorum sint, impedit maxime modi atque! Odio voluptate, aperiam sapiente, ipsam, atque commodi earum fugiat minima ratione, consequatur facilis eos corporis ducimus eius omnis sint excepturi! Labore, reiciendis similique ex! Natus blanditiis accusantium, ad eos laboriosam nobis praesentium eaque sit quaerat odio ullam, ea beatae iure accusamus fugiat dolore dolores deleniti quae aliquam error. Quisquam laudantium voluptate molestiae officiis voluptatibus perferendis deserunt dignissimos ratione veniam excepturi beatae velit quidem dolorem reprehenderit possimus nam cumque ex, quo saepe impedit eligendi, praesentium accusamus tenetur. Tempore expedita, impedit, temporibus aperiam iusto cupiditate officiis ea a mollitia magni, sapiente odio fugit. Hic cupiditate suscipit expedita quas velit voluptatibus a consequatur harum qui, aliquid voluptas ratione accusamus blanditiis reprehenderit laboriosam rem. Quod, dolores eligendi autem at soluta doloremque reprehenderit nobis id laboriosam ipsam, distinctio fugit dolore. Consectetur, libero error tenetur numquam sint placeat dolore deserunt recusandae similique nulla repudiandae quaerat porro ratione incidunt maiores inventore ullam fugiat sed ad cupiditate impedit tempora nobis sit facere. Dolor aut officiis distinctio recusandae totam maiores explicabo mollitia facere eius, itaque laboriosam magnam, quisquam repudiandae? Tempora nemo aperiam, vero, magni quos natus. Debitis voluptate obcaecati nobis eos deleniti corporis culpa ipsa odio facilis. Nostrum in reprehenderit veniam, laboriosam perferendis maxime autem commodi dignissimos dolore, ut, nisi assumenda molestias voluptas atque. Labore consectetur reprehenderit magnam, sed, voluptatibus dolorum iusto excepturi obcaecati dicta iure reiciendis ipsum! Praesentium, iste cumque, in vero consequuntur repellat. Facere optio delectus excepturi dolorum atque illo aliquid adipisci suscipit consequatur sint, magni placeat recusandae autem et assumenda quisquam tempora necessitatibus! Nulla optio nesciunt reiciendis repudiandae omnis! Doloremque neque labore animi ab, iure minima totam suscipit iusto dignissimos facere, maxime necessitatibus et eligendi expedita inventore quo exercitationem magni fuga nobis cumque reprehenderit corrupti dolorum. Iste magnam, delectus dolor!
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- Modal 17 -->
+
+			<div class="modal fade" id="myModal17" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h2 class="modal-title" id="exampleModalLabel">Speaker's Name</h2>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem necessitatibus accusamus commodi animi eius quisquam, provident itaque corrupti dolor modi. Modi perspiciatis molestiae tenetur non, nobis nesciunt explicabo harum? Velit eligendi, nisi voluptate, obcaecati accusamus, reiciendis facere, consectetur quam sequi dignissimos in modi aliquid totam debitis doloremque eius delectus. Explicabo ipsam est doloremque, sunt vitae facilis maxime. Tenetur, sequi, voluptatum! Laudantium enim ab nisi sunt, cumque ea numquam quaerat maiores praesentium. Blanditiis quia aspernatur vel veritatis, corporis distinctio quasi recusandae asperiores nam, et quis, obcaecati nostrum consequatur animi rerum? Ex impedit praesentium ipsam iste qui recusandae magnam incidunt, laboriosam iusto. Cupiditate ipsa in qui consequatur? Doloremque dignissimos illo in qui dolorum sint, impedit maxime modi atque! Odio voluptate, aperiam sapiente, ipsam, atque commodi earum fugiat minima ratione, consequatur facilis eos corporis ducimus eius omnis sint excepturi! Labore, reiciendis similique ex! Natus blanditiis accusantium, ad eos laboriosam nobis praesentium eaque sit quaerat odio ullam, ea beatae iure accusamus fugiat dolore dolores deleniti quae aliquam error. Quisquam laudantium voluptate molestiae officiis voluptatibus perferendis deserunt dignissimos ratione veniam excepturi beatae velit quidem dolorem reprehenderit possimus nam cumque ex, quo saepe impedit eligendi, praesentium accusamus tenetur. Tempore expedita, impedit, temporibus aperiam iusto cupiditate officiis ea a mollitia magni, sapiente odio fugit. Hic cupiditate suscipit expedita quas velit voluptatibus a consequatur harum qui, aliquid voluptas ratione accusamus blanditiis reprehenderit laboriosam rem. Quod, dolores eligendi autem at soluta doloremque reprehenderit nobis id laboriosam ipsam, distinctio fugit dolore. Consectetur, libero error tenetur numquam sint placeat dolore deserunt recusandae similique nulla repudiandae quaerat porro ratione incidunt maiores inventore ullam fugiat sed ad cupiditate impedit tempora nobis sit facere. Dolor aut officiis distinctio recusandae totam maiores explicabo mollitia facere eius, itaque laboriosam magnam, quisquam repudiandae? Tempora nemo aperiam, vero, magni quos natus. Debitis voluptate obcaecati nobis eos deleniti corporis culpa ipsa odio facilis. Nostrum in reprehenderit veniam, laboriosam perferendis maxime autem commodi dignissimos dolore, ut, nisi assumenda molestias voluptas atque. Labore consectetur reprehenderit magnam, sed, voluptatibus dolorum iusto excepturi obcaecati dicta iure reiciendis ipsum! Praesentium, iste cumque, in vero consequuntur repellat. Facere optio delectus excepturi dolorum atque illo aliquid adipisci suscipit consequatur sint, magni placeat recusandae autem et assumenda quisquam tempora necessitatibus! Nulla optio nesciunt reiciendis repudiandae omnis! Doloremque neque labore animi ab, iure minima totam suscipit iusto dignissimos facere, maxime necessitatibus et eligendi expedita inventore quo exercitationem magni fuga nobis cumque reprehenderit corrupti dolorum. Iste magnam, delectus dolor!
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- End to Modal Section -->
+						
+			<!-- End to speaker's Section  -->
 			
 			<!-- <section id="menu-past-events" class="past-event covered-white">
 				<div class="page">
@@ -413,9 +963,7 @@ Ankit Pahuja (https://ankitpahuja.me/)
 				</div>
 			</section> -->
 			<!-- End Past-event Section -->
-			<br>
-			<br>
-			<br>
+			
 				
 			
 			<section class="map" id="menu-contact">
