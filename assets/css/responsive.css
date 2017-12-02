@@ -8,10 +8,6 @@
 		background-attachment: scroll;
 	}
 
-	.container{
-		width: 900px;
-	}
-
 }
 
 @media all and (max-width: 1029px) {
@@ -46,9 +42,6 @@
 	}
 	#intro{
 		padding-top:0;
-	}
-	.container{
-		width: 900px;
 	}
 }
 
@@ -157,9 +150,6 @@
 	.map,#map-canvas{
 		height:728px;
 	}
-	.container{
-		width: 600px;
-	}
 }
 
 @media all and (max-width: 767px) {
@@ -264,7 +254,7 @@
 		top: 46px;
 		width: 100%;
 		left: 0;
-		background-color: #222323;/* opacity: 0.8;*/
+		background-color: rgb(192, 57, 43);/* opacity: 0.8;*/
 		z-index: 10;
 	}
 	#header nav ul {
@@ -421,10 +411,6 @@
 	#intro .page-sm{
 		padding-top:24%;
 	}
-
-	.container{
-		width: 480px;
-	}
 	
 }
 @media only screen and (max-width: 480px) {
@@ -451,9 +437,6 @@
 		width:299px;
 		margin:0 auto;
 		height:61px;
-	}
-	.container{
-		width: 300px;
 	}
 }
 @media only screen and (min-width:1601px)  {
